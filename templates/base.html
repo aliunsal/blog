@@ -1,0 +1,111 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+<head lang="en" class="no-js">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Blog">
+    <meta name="author" content="Ali Ünsal">
+    <title>Blog | {% block title %}{% endblock title%}</title>
+
+    <link href="{% static "css/bootstrap.css" %}" rel="stylesheet">
+
+    <link href="{% static "css/style.css" %}" rel="stylesheet">
+    <script src="{% static "js/modernizr.custom.js" %}s"></script>
+    <!-- Jquery -->
+    <script src="{% static "js/jquery.js" %}"></script>
+
+    <script src="{% static "js/jquery.mobilemenu.js" %}"></script>
+    <script src="{% static "js/jquery.tweet.js" %}"></script>
+    <script src="{% static "js/jquery.masonry.min.js" %}"></script>
+    <script src="{% static "js/superfish.js" %}"></script>
+    <script src="{% static "js/main.js" %}"></script>
+</head>
+<body>
+<header id="header">
+    <div class="container">
+        <a href="#" id="logo"><img src="{% static "img/logo.png" %}" alt=""></a>
+        <nav id="main-navigation">
+            <ul>
+                <li><a href="{% url 'index' %}">Home</a></li>
+                <li>
+                    <a href="category.html">Technology</a>
+                    <ul>
+                        <li><a href="homepage.html">Homepage</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section id="body">
+    <div class="container">
+        {% block body_content %}
+
+        {% endblock body_content%}
+    </div>
+</section>
+
+<footer id="footer">
+    <div class="container">
+        <div class="row">
+
+            <!-- Widget -->
+            <aside class="widget widget_recent_posts span5">
+                <h4 class="widget-title">Trending Posts</h4>
+                <dl>
+                    <dt><a href="#" class="thumbnail"><img src="{% static "img/pictures/51x51.gif" %}" alt=""></a></dt>
+                    <dd>
+                        <a href="#">5 useful tips for integrating paypal in your website, and doing it with style.</a>
+                        <time datetime="2012-11-13">14 May 2012</time>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><a href="#" class="thumbnail"><img src="{% static "img/pictures/51x51.gif" %}" alt=""></a></dt>
+                    <dd>
+                        <a href="#">Why you should not start a company if you can code.</a>
+                        <time datetime="2012-11-13">14 May 2012</time>
+                    </dd>
+                </dl>
+                <a href="#" class="btn">More</a>
+            </aside>
+
+            <!-- Widget -->
+            <aside class="widget widget_twitter span4">
+                <h4 class="widget-title">Latest Tweets</h4>
+
+                <div></div>
+                <a href="#" class="btn">More</a>
+            </aside>
+
+            <!-- Widget -->
+            <aside class="widget widget_flickr span3">
+                <h4 class="widget-title">Flickr Photostream</h4>
+
+                <div>
+                    <script type="text/javascript"
+                            src="http://www.flickr.com/badge_code_v2.gne?count=6&amp;display=latest&amp;size=s&amp;layout=x&amp;source=user&amp;user=52617155@N08"></script>
+                </div>
+                <a href="#" class="btn">More</a>
+            </aside>
+
+        </div>
+    </div>
+    <!-- Copyright -->
+    <div id="copyright">
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Advertising</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Archives</a></li>
+                </ul>
+            </nav>
+            <span>Copyright 2014 - Simplog</span>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
