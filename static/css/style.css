@@ -417,8 +417,8 @@ article.post {
     padding-right: 1px;
     width: 37px;
     text-align: center;
-    top: -21px;
-    right: -10px;
+    top: 255px;
+    right: 5px;
 }
 
 .widget .comments-count {
