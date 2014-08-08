@@ -1,10 +1,28 @@
 {% extends 'base.html' %}
-
+{% load staticfiles %}
 {% block title %}
     Home
 {% endblock title %}
 
 {% block body_content %}
-    asdasdsadsadsadasdadas</br>sadasdasdsa
-
+    {% for post in post_list %}
+        <article class="post inner post-size-big">
+            {% if post.picture %}
+            <div class="post-media">
+                <a href="#" class="thumbnail"><img src="{% static "img/pictures/636x237.gif" %}" alt=""></a>
+                <a href="#" class="comments-count">{{ post.comment.count }}</a>
+            </div>
+            {% endif %}
+            <footer class="post-meta">
+                Posted {{ post.date|date:"d M y" }} by <a href="#">{{ post.author.first_name }} {{ post.author.last_name }}</a> in category <a href="#">Research</a>
+            </footer>
+            <h2 class="entry-title"><a href="{% url 'single_post' post.id %}">{{ post.title }}</a></h2>
+            <div id="content">
+                <p>{{ post.content|truncatechars:300 }}</p>
+            </div>
+            <div class="more-link">
+                <a class="btn" href="{% url 'single_post' post.id %}">Read More</a>
+            </div>
+        </article>
+    {% endfor %}
 {% endblock body_content %}
