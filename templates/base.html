@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Blog">
     <meta name="author" content="Ali Ünsal">
-    <title>Blog | {% block title %}{% endblock title%}</title>
+    <title>Blog | {% block title %}{% endblock title %}</title>
 
     <link href="{% static "css/bootstrap.css" %}" rel="stylesheet">
 
@@ -21,7 +21,7 @@
     <script src="{% static "js/superfish.js" %}"></script>
     <script src="{% static "js/main.js" %}"></script>
 </head>
-<body>
+<body {% block body_class %} {% endblock body_class %}>
 <header id="header">
     <div class="container">
         <a href="#" id="logo"><img src="{% static "img/logo.png" %}" alt=""></a>
@@ -41,9 +41,14 @@
 
 <section id="body">
     <div class="container">
-        {% block body_content %}
+        <div class="row">
+            <section id="content" class="span9">
+                {% block body_content %}
 
-        {% endblock body_content%}
+                {% endblock body_content %}
+            </section>
+        </div>
+
     </div>
 </section>
 
@@ -78,18 +83,6 @@
                 <div></div>
                 <a href="#" class="btn">More</a>
             </aside>
-
-            <!-- Widget -->
-            <aside class="widget widget_flickr span3">
-                <h4 class="widget-title">Flickr Photostream</h4>
-
-                <div>
-                    <script type="text/javascript"
-                            src="http://www.flickr.com/badge_code_v2.gne?count=6&amp;display=latest&amp;size=s&amp;layout=x&amp;source=user&amp;user=52617155@N08"></script>
-                </div>
-                <a href="#" class="btn">More</a>
-            </aside>
-
         </div>
     </div>
     <!-- Copyright -->
