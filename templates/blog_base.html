@@ -3,28 +3,29 @@
 <html>
 <head lang="en" class="no-js">
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Blog">
     <meta name="author" content="Ali Ünsal">
     <title>Blog | {% block title %}{% endblock title %}</title>
 
-    <link href="{% static "css/bootstrap.css" %}" rel="stylesheet">
+    <link href="{% static "Blogs/css/bootstrap.css" %}" rel="stylesheet">
 
-    <link href="{% static "css/style.css" %}" rel="stylesheet">
-    <script src="{% static "js/modernizr.custom.js" %}s"></script>
+    <link href="{% static "Blogs/css/style.css" %}" rel="stylesheet">
+    <script src="{% static "Blogs/js/modernizr.custom.js" %}"></script>
     <!-- Jquery -->
-    <script src="{% static "js/jquery.js" %}"></script>
+    <script src="{% static "Blogs/js/jquery.js" %}"></script>
 
-    <script src="{% static "js/jquery.mobilemenu.js" %}"></script>
-    <script src="{% static "js/jquery.tweet.js" %}"></script>
-    <script src="{% static "js/jquery.masonry.min.js" %}"></script>
-    <script src="{% static "js/superfish.js" %}"></script>
-    <script src="{% static "js/main.js" %}"></script>
+    <script src="{% static "Blogs/js/jquery.mobilemenu.js" %}"></script>
+    <script src="{% static "Blogs/js/jquery.tweet.js" %}"></script>
+    <script src="{% static "Blogs/js/jquery.masonry.min.js" %}"></script>
+    <script src="{% static "Blogs/js/superfish.js" %}"></script>
+    <script src="{% static "Blogs/js/main.js" %}"></script>
 </head>
 <body {% block body_class %} {% endblock body_class %}>
 <header id="header">
     <div class="container">
-        <a href="#" id="logo"><img src="{% static "img/logo.png" %}" alt=""></a>
+        <a href="#" id="logo"><img src="{% static "Blogs/img/logo.png" %}" alt=""></a>
         <nav id="main-navigation">
             <ul>
                 <li><a href="{% url 'index' %}">Home</a></li>
@@ -60,14 +61,14 @@
             <aside class="widget widget_recent_posts span5">
                 <h4 class="widget-title">Trending Posts</h4>
                 <dl>
-                    <dt><a href="#" class="thumbnail"><img src="{% static "img/pictures/51x51.gif" %}" alt=""></a></dt>
+                    <dt><a href="#" class="thumbnail"><img src="{% static "Blogs/img/pictures/51x51.gif" %}" alt=""></a></dt>
                     <dd>
                         <a href="#">5 useful tips for integrating paypal in your website, and doing it with style.</a>
                         <time datetime="2012-11-13">14 May 2012</time>
                     </dd>
                 </dl>
                 <dl>
-                    <dt><a href="#" class="thumbnail"><img src="{% static "img/pictures/51x51.gif" %}" alt=""></a></dt>
+                    <dt><a href="#" class="thumbnail"><img src="{% static "Blogs/img/pictures/51x51.gif" %}" alt=""></a></dt>
                     <dd>
                         <a href="#">Why you should not start a company if you can code.</a>
                         <time datetime="2012-11-13">14 May 2012</time>
