@@ -1,4 +1,4 @@
-{% extends 'base.html' %}
+{% extends 'blog_base.html' %}
 {% load staticfiles %}
 {% block title %}
     Home
@@ -9,7 +9,7 @@
         <article class="post inner post-size-big">
             {% if post.picture %}
             <div class="post-media">
-                <a href="#" class="thumbnail"><img src="{% static "img/pictures/636x237.gif" %}" alt=""></a>
+                <a href="#" class="thumbnail"><img src="{% static "Blogs/img/pictures/636x237.gif" %}" alt=""></a>
                 <a href="#" class="comments-count">{{ post.comment.count }}</a>
             </div>
             {% endif %}
