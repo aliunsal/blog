@@ -5,20 +5,18 @@ from django.contrib.contenttypes import generic
 
 
 class Comment(models.Model):
-    content = models.TextField()
+    content = models.TextField(null=False)
     date = models.DateTimeField()
-    author = models.ForeignKey(User)
+    author = models.ForeignKey(User, default=0)
     approved = models.BooleanField(default=False)
     activation_key = models.TextField(max_length=150)
+    email = models.EmailField(null=False)
     content_type = models.ForeignKey(ContentType)
     object_id = models.PositiveIntegerField()
     content_object = generic.GenericForeignKey('content_type', 'object_id')
 
     def __unicode__(self):
         return self.content
-
-    class Meta:
-        ordering = ["-date"]
 
 
 class Post(models.Model):
