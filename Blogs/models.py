@@ -1,7 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import User
 from django.contrib.contenttypes.models import ContentType
-from django.contrib.contenttypes import generic
+from django.contrib.contenttypes.generic import GenericForeignKey, GenericRelation
 
 
 class Comment(models.Model):
@@ -14,7 +14,9 @@ class Comment(models.Model):
 
     content_type = models.ForeignKey(ContentType)
     object_id = models.PositiveIntegerField()
-    content_object = generic.GenericForeignKey('content_type', 'object_id')
+    content_object = GenericForeignKey('content_type', 'object_id')
+
+    comment = GenericRelation("Comment")
 
     def __unicode__(self):
         return self.content
@@ -27,7 +29,7 @@ class Post(models.Model):
     picture = models.ImageField(upload_to='static/img/post_image/',
                                 null=True)
     author = models.ForeignKey(User)
-    comment = generic.GenericRelation(Comment)
+    comment = GenericRelation(Comment)
 
     def __unicode__(self):
         return self.title
