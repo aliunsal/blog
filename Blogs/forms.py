@@ -1,6 +1,7 @@
 import random
 from django import forms
 from django.core.urlresolvers import reverse
+from django.template.loader import get_template, render_to_string
 from Blogs.models import Comment
 from django.utils import timezone
 from django.contrib.auth.models import User
@@ -31,8 +32,8 @@ class AnonymousUserCommentForm(forms.ModelForm):
         comment.content_object = post
         comment.activation_key = hashlib.sha256(user.email + str(random.random())).hexdigest()
         comment.save()
-
-        task.mail_send.delay("Email Activation", reverse("email", args=(comment.activation_key,)), None, [comment.email])
+        content = render_to_string("Email/email.html", {"activation_key": comment.activation_key})
+        task.mail_send.delay("Email Activation", content, None, [comment.email])
 
 
 class UserCommentForm(forms.ModelForm):
