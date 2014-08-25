@@ -8,13 +8,13 @@
     {% for post in post_list %}
         <article class="post inner post-size-big">
             {% if post.picture %}
-            <div class="post-media">
-                <a href="#" class="thumbnail"><img src="{% static "Blogs/img/pictures/636x237.gif" %}" alt=""></a>
-                <a href="#" class="comments-count">{{ post.comment.count }}</a>
-            </div>
+                <div class="post-media">
+                    <a href="{% url 'single_post' post.id %}" class="thumbnail"><img src="{% static post.picture %}" alt=""></a>
+                </div>
             {% endif %}
             <footer class="post-meta">
-                Posted {{ post.date|date:"d M y" }} by <a href="#">{{ post.author.first_name }} {{ post.author.last_name }}</a> in category <a href="#">Research</a>
+                Posted {{ post.date|date:"d M y" }} by <a
+                    href="#">{{ post.author.first_name }} {{ post.author.last_name }}</a> in category <a href="#">Research</a>
             </footer>
             <h2 class="entry-title"><a href="{% url 'single_post' post.id %}">{{ post.title }}</a></h2>
             <div id="content">
@@ -25,4 +25,17 @@
             </div>
         </article>
     {% endfor %}
+    <nav class="inner" id="category-navigation">
+
+        <div class="pagination">
+            <ul >
+                {% if prev > 0 %}
+                    <li style="margin-right: 88%; "><a href="{% url 'index_pager' prev %}">«</a></li>
+                {% elif prev == 0 %}
+                    <li style="margin-right: 88%; "><a href="{% url 'index' %}">«</a></li>
+                {% endif %}
+                <li><a href="{% url 'index_pager' next %}">»</a></li>
+            </ul>
+        </div>
+    </nav>
 {% endblock body_content %}
