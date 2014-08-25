@@ -1,7 +1,8 @@
-from django.conf.urls import patterns, include, url
+from django.conf.urls import patterns, include, url, handler400, handler500
 import settings
 from django.contrib import admin
-from django.conf.urls.static import static
+from Blogs.views import handler_404, handler_500
+
 admin.autodiscover()
 
 urlpatterns = patterns('',
@@ -17,3 +18,7 @@ if settings.DEBUG is False:
     urlpatterns += patterns('',
             url(r'^static/(?P<path>.*)$', 'django.views.static.serve', {'document_root': settings.STATIC_ROOT}),
             )
+
+
+handler500 = handler_500
+handler404 = handler_404
