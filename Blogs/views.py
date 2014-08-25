@@ -54,3 +54,11 @@ def post(request, post_id):
 def email_activation(request, key):
     Comment.objects.filter(activation_key=key).update(approved=True)
     return HttpResponseRedirect(reverse("index"))
+
+
+def handler_404(request):
+    return render(request, "Error/404.html")
+
+
+def handler_500(request):
+    return render(request, "Error/500.html")
