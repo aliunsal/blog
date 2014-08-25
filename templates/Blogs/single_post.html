@@ -15,9 +15,9 @@
             {% if post.picture %}
                 {% load staticfiles %}
                 <div class="post-media">
-                    <a href="#" class="thumbnail"><img src="{% static "Blogs/img/pictures/636x237.gif" %}" alt=""></a>
+                    <a href="#" class="thumbnail"><img src="{% static post.picture %}" alt=""></a>
                 </div>
-                <a href="#" class="comments-count">{{ post.comment.count }}</a>
+
             {% endif %}
             <footer class="post-meta">
                 Posted {{ post.date|date:"d M y" }} by <a href="#">{{ post.author.first_name }} {{ post.author.last_name }}</a> in category <a href="#">Research</a
@@ -28,7 +28,7 @@
 
         <!-- Post Author -->
         <section class="post-author">
-            <img src="{% static "Blogs/img/pictures/70x70.gif" %}" alt="" class="thumbnail">
+            <img src="{% static post.author.userprofile.avatar %}" alt="" class="thumbnail">
 
             <div class="author-profile">
                 <h4>Author: <a href="#">{{ post.author.first_name }} {{ post.author.last_name }}</a></h4>
@@ -56,13 +56,13 @@
 
             <ol class="commentlist">
 
-                {% for comment in post.comment.all %}
+                {% for comment in comments %}
 
                     <li class="comment">
                         <article class="comment">
                             <header class="comment-meta comment-author vcard">
                                 <img src="{% static  "Blogs/img/pictures/50x50.gif" %}" alt="" class="avatar thumbnail">
-                                <cite class="fn"><a href="#" class="url">{{ comment.email }}</a></cite>
+                                <cite class="fn"><a href="#" class="url">{{ comment.author.first_name }}</a></cite>
                                 <time datetime="2012-11-13">{{ comment.date|date:"d M y H:i" }}</time>
                             </header>
                             <section class="comment-content comment">
