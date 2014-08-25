@@ -10,4 +10,10 @@ urlpatterns = patterns('',
     url(r'^blog/', include('Blogs.urls')),
     url(r'^user/', include('Users.urls')),
     url(r'^admin/', include(admin.site.urls)),
+    url(r'^email/(?P<key>.*)', 'Blogs.views.email_activation', name="email"),
 )
+
+if settings.DEBUG is False:
+    urlpatterns += patterns('',
+            url(r'^static/(?P<path>.*)$', 'django.views.static.serve', {'document_root': settings.STATIC_ROOT}),
+            )
