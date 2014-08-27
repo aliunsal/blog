@@ -495,6 +495,7 @@ article.post {
     border-bottom: #e1e1e1 1px solid;
     background: url("../img/author-bg.png");
     margin-bottom: 0;
+    height: 112px;
 }
 
 .post-author {
@@ -599,7 +600,7 @@ article.comment header {
 }
 
 .comment-content {
-    padding: 2px 0 0 80px;
+    padding: 2px 0 0 5px;
     line-height: 22px;
 }
 
@@ -640,6 +641,18 @@ article.comment header {
     border-bottom-right-radius: 3px;
     border-bottom-left-radius: 3px;
 }
+#respond-comment {
+    background: #fff url("../img/respond-bg.png");
+    padding: 32px 20px 2px;
+    position: relative;
+    -webkit-border-bottom-right-radius: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    -moz-border-radius-bottomright: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    height: 480px;
+}
 
 #contact {
     padding: 32px 20px 2px;
@@ -652,7 +665,10 @@ article.comment header {
     padding-top: 14px;
     margin: 0 0 20px;
 }
-
+#respond-comment form, #contact form {
+    padding-top: 14px;
+    margin: 0 0 20px;
+}
 #contact p {
     margin-bottom: 18px;
 }
@@ -674,7 +690,7 @@ article.comment header {
     margin-bottom: 15px;
 }
 
-#respond fieldset:first-child input[type="text"] {
+#respond  fieldset:first-child input[type="text"] {
     margin-right: 20px;
 }
 
@@ -691,6 +707,27 @@ article.comment header {
 
 #respond textarea, #contact textarea {
     width: 616px;
+    height: 184px;
+    margin-bottom: 23px;
+}
+
+#respond-comment  fieldset:first-child input[type="text"] {
+    margin-right: 20px;
+}
+
+#respond-comment input[type="text"] {
+    width: 277px;
+    margin-bottom: 19px;
+}
+
+#respond-comment input[type="text"] {
+    width: 238px;
+    margin: 0 19px 18px 0;
+    display: block;
+}
+
+#respond-comment textarea, #contact textarea {
+    width: 90%;
     height: 184px;
     margin-bottom: 23px;
 }
