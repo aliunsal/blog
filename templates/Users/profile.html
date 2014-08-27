@@ -2,7 +2,8 @@
 {% load staticfiles %}
 
 {% block plugin_top %}
-    <link href="{% static "Users/plugins/bootstrap-fileupload/bootstrap-fileupload.css" %}" rel="stylesheet" type="text/css"/>
+    <link href="{% static "Users/plugins/bootstrap-fileupload/bootstrap-fileupload.css" %}" rel="stylesheet"
+          type="text/css"/>
 {% endblock plugin_top %}
 {% block user_page_content %}
     <div class="row">
@@ -22,16 +23,17 @@
                                 <label class="control-label col-md-3">Avatar</label>
 
                                 <div class="col-md-9">
-                                    <div class="fileupload fileupload-new" data-provides="fileupload"><input type="hidden"
-                                                                                                             value=""
-                                                                                                             name="">
+                                    <div class="fileupload fileupload-new" data-provides="fileupload"><input
+                                            type="hidden"
+                                            value=""
+                                            name="">
 
-                                        <div class="fileupload-new thumbnail" style="width: 200px; height: 150px;">
-                                            <img src="{% static form.avatar.value  %}"
+                                        <div class="fileupload-new thumbnail" style="width: 70px; height: 70px;">
+                                            <img src="/{{ form.avatar.value }}"
                                                  alt="">
                                         </div>
                                         <div class="fileupload-preview fileupload-exists thumbnail"
-                                             style="max-width: 200px; max-height: 150px; line-height: 2px;"></div>
+                                             style="max-width: 70px; max-height: 70px; line-height: 2px;"></div>
                                         <div>
                                                         <span class="btn default btn-file">
                                                             <span class="fileupload-new">
@@ -40,9 +42,14 @@
                                                             <span class="fileupload-exists">
                                                                 <i class="fa fa-undo"></i> Change
                                                             </span>
-                                                            <input type="file" class="default" name="{{ form.avatar.name }}" id="{{ form.avatar.name }}" value="{{ form.avatar.value }}">
+                                                            <input type="file" class="default"
+                                                                   name="{{ form.avatar.name }}"
+                                                                   id="{{ form.avatar.name }}"
+                                                                   value="{{ form.avatar.value }}">
                                                         </span>
-                                            <a href="#" class="btn red fileupload-exists" data-dismiss="{{ form.avatar.name }}" data-trigger="{{ form.avatar.name }}"><i
+                                            <a href="#" class="btn red fileupload-exists"
+                                               data-dismiss="{{ form.avatar.name }}"
+                                               data-trigger="{{ form.avatar.name }}"><i
                                                     class="fa fa-trash-o"></i> Remove</a>
                                         </div>
                                     </div>
@@ -99,5 +106,6 @@
 {% endblock user_page_content %}
 
 {% block plugin %}
-    <script src="{% static "Users/plugins/bootstrap-fileupload/bootstrap-fileupload.js" %}" type="text/javascript"></script>
+    <script src="{% static "Users/plugins/bootstrap-fileupload/bootstrap-fileupload.js" %}"
+            type="text/javascript"></script>
 {% endblock plugin %}
