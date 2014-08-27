@@ -19,6 +19,7 @@
                                     Title</label>
 
                                 <div class="col-md-10">
+                                    {{ form.title.errors }}
                                     <input type="text" id="id_{{ form.title.name }}"
                                            name="{{ form.title.name }}"
                                            class="form-control" placeholder="Title" value="{{ form.title.value }}">
@@ -29,6 +30,7 @@
                                     Content</label>
 
                                 <div class="col-md-10">
+                                    {{ form.content.errors }}
                                     <textarea type="text" id="id_{{ form.content.name }}"
                                            name="{{ form.content.name }}"
                                            class="form-control" placeholder="Content" rows="10" value="">{{ form.content.value }}</textarea>
@@ -39,7 +41,8 @@
                             <label class="control-label col-md-2">Image</label>
 
                             <div class="col-md-4">
-                                <label><img  src="{% static form.picture.value %}"></label>
+                                <label><img  src="/{{ form.picture.value }}"></label>
+                                {{ form.picture.errors }}
                                 <input type="file" class="default" name="{{ form.picture.name }}">
                             </div>
                         </div>
