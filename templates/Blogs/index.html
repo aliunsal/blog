@@ -9,12 +9,12 @@
         <article class="post inner post-size-big">
             {% if post.picture %}
                 <div class="post-media">
-                    <a href="{% url 'single_post' post.id %}" class="thumbnail"><img src="{% static post.picture %}" alt=""></a>
+                    <a href="{% url 'single_post' post.id %}" class="thumbnail"><img src="/{{ post.picture }}" alt=""></a>
                 </div>
             {% endif %}
             <footer class="post-meta">
                 Posted {{ post.date|date:"d M y" }} by <a
-                    href="#">{{ post.author.first_name }} {{ post.author.last_name }}</a> in category <a href="#">Research</a>
+                    href="#">{{ post.author.first_name }} {{ post.author.last_name }}</a>
             </footer>
             <h2 class="entry-title"><a href="{% url 'single_post' post.id %}">{{ post.title }}</a></h2>
             <div id="content">
