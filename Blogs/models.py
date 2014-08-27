@@ -6,7 +6,7 @@ from django.contrib.contenttypes.generic import GenericForeignKey, GenericRelati
 
 class Comment(models.Model):
     content = models.TextField(null=False)
-    date = models.DateTimeField()
+    date = models.DateTimeField(auto_now_add=True)
     author = models.ForeignKey(User, default=0)
     approved = models.BooleanField(default=False)
     activation_key = models.TextField(max_length=150)
