@@ -21,7 +21,9 @@ class AnonymousUserCommentForm(forms.ModelForm):
     def save(self, post):
         user = User.objects.get(email=self.cleaned_data["email"])
         if not user:
-            user = User.objects.create_user(username=uuid.uuid4(), email=self.cleaned_data["email"])
+            user = User.objects.create_user(username=uuid.uuid4(),
+                                            email=self.cleaned_data["email"],
+                                            is_active=False)
 
         comment = Comment()
         comment.content = self.cleaned_data["content"]
