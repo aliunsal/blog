@@ -11,7 +11,10 @@ urlpatterns = patterns('',
     url(r'^blog/', include('Blogs.urls')),
     url(r'^user/', include('Users.urls')),
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^email/(?P<key>.*)', 'Blogs.views.email_activation', name="email"),
+    url(r'^email_activation/(?P<key>.*)', 'Blogs.views.email_activation', name="email_activation"),
+    url(r'^user_activation/(?P<key>.*)', 'Users.views.user_activation', name="user_activation"),
+    url(r'subcomment/(?P<comment_id>[0-9]+)/$', 'Blogs.views.sub_comment_add', name='sub_comment_add'),
+
 )
 
 if settings.DEBUG is False:
