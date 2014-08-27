@@ -12,5 +12,5 @@ urlpatterns = patterns('Users',
     url(r'^posts/add', views.user_post_add, name='user_post_add'),
     url(r'^posts/', views.user_post_list, name='user_post_list'),
     url(r'^profile/', views.user_profile, name='user_profile'),
-    url(r'^profile/', views.register, name='user_profile'),
+    url(r'^register/', views.register, name='user_register'),
 )
