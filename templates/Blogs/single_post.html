@@ -15,60 +15,65 @@
             {% if post.picture %}
                 {% load staticfiles %}
                 <div class="post-media">
-                    <a href="#" class="thumbnail"><img src="{% static post.picture %}" alt=""></a>
+                    <a href="#" class="thumbnail"><img src="/{{ post.picture }}" alt=""></a>
                 </div>
 
             {% endif %}
             <footer class="post-meta">
-                Posted {{ post.date|date:"d M y" }} by <a href="#">{{ post.author.first_name }} {{ post.author.last_name }}</a> in category <a href="#">Research</a
-            </footer>
+                Posted {{ post.date|date:"d M y" }} by <a href="#">{{ post.author.first_name }} {{ post.author.last_name }}</a>             </footer>
             <h1>{{ post.title }}</h1>
             {{ post.content }}
         </article>
 
         <!-- Post Author -->
         <section class="post-author">
-            <img src="{% static post.author.userprofile.avatar %}" alt="" class="thumbnail">
+            <img src="/{{ post.author.userprofile.avatar }}" alt="" class="thumbnail">
 
             <div class="author-profile">
-                <h4>Author: <a href="#">{{ post.author.first_name }} {{ post.author.last_name }}</a></h4>
+                <h4>Author: {{ post.author.first_name }} {{ post.author.last_name }}</h4>
 
-                <p></p>
-                <address>
-                    <a href="#" class="btn btn-small">Visit website</a>
-                    <a href="#" class="btn btn-small">View more posts</a>
-                    <nav>
-                        <ul>
-                            <li><a href="#"><img src="assets/img/social/twitter-small.png" alt="Twitter"></a></li>
-                            <li><a href="#"><img src="assets/img/social/facebook-small.png" alt="Facebook"></a></li>
-                        </ul>
-                    </nav>
-                </address>
+
             </div>
         </section>
 
         <!-- Comments Section -->
         <section id="comments" class="comment-area">
 
-            <a href="#" class="btn btn-large">Submit a comment</a>
 
-            <h2 class="comments-title">{{ post.comment.count }} Comments</h2>
+
+            <h2 class="comments-title"> Comments</h2>
 
             <ol class="commentlist">
 
+
+                <script>
+                    $(document).ready(function () {
+                        $( ".reply" ).click(function() {
+                            $(this).next().slideToggle(200);
+                        });
+                    });
+                </script>
                 {% for comment in comments %}
 
                     <li class="comment">
                         <article class="comment">
                             <header class="comment-meta comment-author vcard">
-                                <img src="{% static  "Blogs/img/pictures/50x50.gif" %}" alt="" class="avatar thumbnail">
+
                                 <cite class="fn"><a href="#" class="url">{{ comment.author.first_name }}</a></cite>
                                 <time datetime="2012-11-13">{{ comment.date|date:"d M y H:i" }}</time>
                             </header>
                             <section class="comment-content comment">
                                 <p>{{ comment.content }}</p>
                             </section>
-                            <div class="reply" title="Reply to this comment!"></div>
+                            <div class="reply" title="Reply to this comment!" id="reply"></div>
+                            <div id="respond-comment" style="display: none">
+                                <form action="{% url "sub_comment_add" comment.id %}?next={{ request.path }}" id="commentform" method="post">
+                                    {% csrf_token %}
+                                    {{ form }}
+                                    <input type="hidden" name="comment_id" value="{{ comment.id }}">
+                                    <input type="submit" value="Submit comment" class="btn btn-large">
+                                </form>
+                            </div>
                         </article>
                     </li>
                 {% endfor %}
@@ -81,7 +86,6 @@
 
             <h2 id="reply-title">Submit a Comment</h2>
 
-            <p>We would love to hear your thoughts. Feel free to submit a comment and join the conversation!</p>
 
             <form action="#" id="commentform" method="post">
                 {% csrf_token %}
