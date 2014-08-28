@@ -59,8 +59,6 @@ class UserProfile(forms.Form):
     email = forms.EmailField()
 
 
-
-
 class UserPost(forms.Form):
     title = forms.CharField(max_length=250)
     content = forms.CharField(widget=forms.Textarea)

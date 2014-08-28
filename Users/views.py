@@ -21,6 +21,8 @@ def user_login(request):
         if user is not None:
             login(request, user)
             return HttpResponseRedirect(reverse("user_index"))
+        else:
+            return render(request, "Users/login.html", {"error": "Email or password incorrect!"})
     elif request.user.is_authenticated():
         return HttpResponseRedirect(reverse("user_index"))
     return render(request, "Users/login.html", )
@@ -33,7 +35,6 @@ def user_logout(request):
 
 @login_required()
 def index(request):
-    #task.mail_send.delay("asdsaa", "ljasndlknsad", "Ali Unsal", ["aliunsal@live.com"])
     return render(request, "Users/index.html")
 
 
