@@ -1,0 +1,2255 @@
+[
+    {
+        "pk": 1,
+        "model": "contenttypes.contenttype",
+        "fields": {
+            "model": "logentry",
+            "name": "log entry",
+            "app_label": "admin"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "contenttypes.contenttype",
+        "fields": {
+            "model": "permission",
+            "name": "permission",
+            "app_label": "auth"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "contenttypes.contenttype",
+        "fields": {
+            "model": "group",
+            "name": "group",
+            "app_label": "auth"
+        }
+    },
+    {
+        "pk": 4,
+        "model": "contenttypes.contenttype",
+        "fields": {
+            "model": "user",
+            "name": "user",
+            "app_label": "auth"
+        }
+    },
+    {
+        "pk": 5,
+        "model": "contenttypes.contenttype",
+        "fields": {
+            "model": "contenttype",
+            "name": "content type",
+            "app_label": "contenttypes"
+        }
+    },
+    {
+        "pk": 6,
+        "model": "contenttypes.contenttype",
+        "fields": {
+            "model": "session",
+            "name": "session",
+            "app_label": "sessions"
+        }
+    },
+    {
+        "pk": 7,
+        "model": "contenttypes.contenttype",
+        "fields": {
+            "model": "comment",
+            "name": "comment",
+            "app_label": "Blogs"
+        }
+    },
+    {
+        "pk": 8,
+        "model": "contenttypes.contenttype",
+        "fields": {
+            "model": "post",
+            "name": "post",
+            "app_label": "Blogs"
+        }
+    },
+    {
+        "pk": 9,
+        "model": "contenttypes.contenttype",
+        "fields": {
+            "model": "migrationhistory",
+            "name": "migration history",
+            "app_label": "south"
+        }
+    },
+    {
+        "pk": 10,
+        "model": "contenttypes.contenttype",
+        "fields": {
+            "model": "taskmeta",
+            "name": "task state",
+            "app_label": "djcelery"
+        }
+    },
+    {
+        "pk": 11,
+        "model": "contenttypes.contenttype",
+        "fields": {
+            "model": "tasksetmeta",
+            "name": "saved group result",
+            "app_label": "djcelery"
+        }
+    },
+    {
+        "pk": 12,
+        "model": "contenttypes.contenttype",
+        "fields": {
+            "model": "intervalschedule",
+            "name": "interval",
+            "app_label": "djcelery"
+        }
+    },
+    {
+        "pk": 13,
+        "model": "contenttypes.contenttype",
+        "fields": {
+            "model": "crontabschedule",
+            "name": "crontab",
+            "app_label": "djcelery"
+        }
+    },
+    {
+        "pk": 14,
+        "model": "contenttypes.contenttype",
+        "fields": {
+            "model": "periodictasks",
+            "name": "periodic tasks",
+            "app_label": "djcelery"
+        }
+    },
+    {
+        "pk": 15,
+        "model": "contenttypes.contenttype",
+        "fields": {
+            "model": "periodictask",
+            "name": "periodic task",
+            "app_label": "djcelery"
+        }
+    },
+    {
+        "pk": 16,
+        "model": "contenttypes.contenttype",
+        "fields": {
+            "model": "workerstate",
+            "name": "worker",
+            "app_label": "djcelery"
+        }
+    },
+    {
+        "pk": 17,
+        "model": "contenttypes.contenttype",
+        "fields": {
+            "model": "taskstate",
+            "name": "task",
+            "app_label": "djcelery"
+        }
+    },
+    {
+        "pk": 18,
+        "model": "contenttypes.contenttype",
+        "fields": {
+            "model": "userprofile",
+            "name": "user profile",
+            "app_label": "Users"
+        }
+    },
+    {
+        "pk": "610r6fntpylh5y486kfx62hpj18552q1",
+        "model": "sessions.session",
+        "fields": {
+            "expire_date": "2014-09-09T16:13:09.983Z",
+            "session_data": "MDAxNWMwNGEyZWU4NDhlNzA1MDgwYjFiMzc4NzU5MzIxOTEzMzc4Mzp7Il9hdXRoX3VzZXJfYmFja2VuZCI6IlVzZXJzLmJhY2tlbmRzLkVtYWlsQXV0aEJhY2tlbmQiLCJfYXV0aF91c2VyX2lkIjoxfQ=="
+        }
+    },
+    {
+        "pk": "81817p6098nd4ahz5gvpyi3yti73n2ap",
+        "model": "sessions.session",
+        "fields": {
+            "expire_date": "2014-09-05T12:23:14.659Z",
+            "session_data": "ZTI3MDk3N2Q0OTFjNTFhZmQyYTc3MjU0OWY1YTFhYWNiMTI3Yzg4Yjp7fQ=="
+        }
+    },
+    {
+        "pk": "n5p2lft2lel5chmdqh4du9ozqseqipze",
+        "model": "sessions.session",
+        "fields": {
+            "expire_date": "2014-09-05T12:31:00.622Z",
+            "session_data": "ZTI3MDk3N2Q0OTFjNTFhZmQyYTc3MjU0OWY1YTFhYWNiMTI3Yzg4Yjp7fQ=="
+        }
+    },
+    {
+        "pk": 1,
+        "model": "south.migrationhistory",
+        "fields": {
+            "applied": "2014-08-07T07:38:08.827Z",
+            "app_name": "Blogs",
+            "migration": "0002_initial"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "south.migrationhistory",
+        "fields": {
+            "applied": "2014-08-07T07:41:09.596Z",
+            "app_name": "Blogs",
+            "migration": "0003_initial"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "south.migrationhistory",
+        "fields": {
+            "applied": "2014-08-11T08:08:12.607Z",
+            "app_name": "Blogs",
+            "migration": "0004_auto__add_field_post_email"
+        }
+    },
+    {
+        "pk": 4,
+        "model": "south.migrationhistory",
+        "fields": {
+            "applied": "2014-08-11T08:10:38.831Z",
+            "app_name": "Blogs",
+            "migration": "0005_auto__add_field_comment_email__del_field_post_email"
+        }
+    },
+    {
+        "pk": 5,
+        "model": "south.migrationhistory",
+        "fields": {
+            "applied": "2014-08-11T08:11:21.241Z",
+            "app_name": "Blogs",
+            "migration": "0006_auto__del_field_post_comment_status"
+        }
+    },
+    {
+        "pk": 6,
+        "model": "south.migrationhistory",
+        "fields": {
+            "applied": "2014-08-11T08:13:40.015Z",
+            "app_name": "Blogs",
+            "migration": "0007_auto__add_field_post_comment_status"
+        }
+    },
+    {
+        "pk": 7,
+        "model": "south.migrationhistory",
+        "fields": {
+            "applied": "2014-08-15T08:03:52.443Z",
+            "app_name": "djcelery",
+            "migration": "0001_initial"
+        }
+    },
+    {
+        "pk": 8,
+        "model": "south.migrationhistory",
+        "fields": {
+            "applied": "2014-08-15T08:03:54.436Z",
+            "app_name": "djcelery",
+            "migration": "0002_v25_changes"
+        }
+    },
+    {
+        "pk": 9,
+        "model": "south.migrationhistory",
+        "fields": {
+            "applied": "2014-08-15T08:03:55.574Z",
+            "app_name": "djcelery",
+            "migration": "0003_v26_changes"
+        }
+    },
+    {
+        "pk": 10,
+        "model": "south.migrationhistory",
+        "fields": {
+            "applied": "2014-08-15T08:03:56.175Z",
+            "app_name": "djcelery",
+            "migration": "0004_v30_changes"
+        }
+    },
+    {
+        "pk": 11,
+        "model": "south.migrationhistory",
+        "fields": {
+            "applied": "2014-08-18T06:57:33.161Z",
+            "app_name": "Blogs",
+            "migration": "0008_auto__del_field_post_status__del_field_post_comment_status"
+        }
+    },
+    {
+        "pk": 12,
+        "model": "south.migrationhistory",
+        "fields": {
+            "applied": "2014-08-20T11:14:20.868Z",
+            "app_name": "Blogs",
+            "migration": "0009_auto__del_field_post_modified__chg_field_post_title"
+        }
+    },
+    {
+        "pk": 1,
+        "model": "djcelery.taskmeta",
+        "fields": {
+            "status": "SUCCESS",
+            "task_id": "03c6aaa4-fabb-4583-a973-9b1168a7355e",
+            "date_done": "2014-08-15T08:04:58.535Z",
+            "traceback": null,
+            "meta": "eJxrYKotZIzgYGBgSM7IzEkpSs2LLdYDADylBhk=",
+            "result": null,
+            "hidden": false
+        }
+    },
+    {
+        "pk": 2,
+        "model": "djcelery.taskmeta",
+        "fields": {
+            "status": "SUCCESS",
+            "task_id": "0aadf301-4c7e-4cd7-a320-ead16bb72785",
+            "date_done": "2014-08-15T08:05:34.270Z",
+            "traceback": null,
+            "meta": "eJxrYKotZIzgYGBgSM7IzEkpSs2LLdYDADylBhk=",
+            "result": null,
+            "hidden": false
+        }
+    },
+    {
+        "pk": 3,
+        "model": "djcelery.taskmeta",
+        "fields": {
+            "status": "SUCCESS",
+            "task_id": "2b148d67-a83c-41c7-a4cb-a4fd93d1f839",
+            "date_done": "2014-08-15T08:08:22.733Z",
+            "traceback": null,
+            "meta": "eJxrYKotZIzgYGBgSM7IzEkpSs2LLdYDADylBhk=",
+            "result": null,
+            "hidden": false
+        }
+    },
+    {
+        "pk": 4,
+        "model": "djcelery.taskmeta",
+        "fields": {
+            "status": "FAILURE",
+            "task_id": "e61642e4-ff39-4729-a799-fb6ff44451f0",
+            "date_done": "2014-08-15T08:24:18.330Z",
+            "traceback": "Traceback (most recent call last):\n  File \"/home/aliunsal/Envs/blog/local/lib/python2.7/site-packages/celery/app/trace.py\", line 240, in trace_task\n    R = retval = fun(*args, **kwargs)\n  File \"/home/aliunsal/Envs/blog/local/lib/python2.7/site-packages/celery/app/trace.py\", line 437, in __protected_call__\n    return self.run(*args, **kwargs)\n  File \"/home/aliunsal/PycharmProjects/Blog/task.py\", line 9, in resize_image\n    image = Image.open(image_file)\n  File \"/home/aliunsal/Envs/blog/local/lib/python2.7/site-packages/PIL/Image.py\", line 1956, in open\n    prefix = fp.read(16)\nValueError: I/O operation on closed file\n",
+            "meta": "eJxrYKotZIzgYGBgSM7IzEkpSs2LLdYDADylBhk=",
+            "result": "gAJjZXhjZXB0aW9ucwpWYWx1ZUVycm9yCnEBVRxJL08gb3BlcmF0aW9uIG9uIGNsb3NlZCBmaWxlcQKFcQNScQQu",
+            "hidden": false
+        }
+    },
+    {
+        "pk": 5,
+        "model": "djcelery.taskmeta",
+        "fields": {
+            "status": "FAILURE",
+            "task_id": "6f359b21-e434-4bc4-a211-d0899b7845de",
+            "date_done": "2014-08-15T08:25:11.633Z",
+            "traceback": "Traceback (most recent call last):\n  File \"/home/aliunsal/Envs/blog/local/lib/python2.7/site-packages/celery/app/trace.py\", line 240, in trace_task\n    R = retval = fun(*args, **kwargs)\n  File \"/home/aliunsal/Envs/blog/local/lib/python2.7/site-packages/celery/app/trace.py\", line 437, in __protected_call__\n    return self.run(*args, **kwargs)\n  File \"/home/aliunsal/PycharmProjects/Blog/task.py\", line 9, in resize_image\n    image = Image.open(image_file)\n  File \"/home/aliunsal/Envs/blog/local/lib/python2.7/site-packages/PIL/Image.py\", line 1956, in open\n    prefix = fp.read(16)\nValueError: I/O operation on closed file\n",
+            "meta": "eJxrYKotZIzgYGBgSM7IzEkpSs2LLdYDADylBhk=",
+            "result": "gAJjZXhjZXB0aW9ucwpWYWx1ZUVycm9yCnEBVRxJL08gb3BlcmF0aW9uIG9uIGNsb3NlZCBmaWxlcQKFcQNScQQu",
+            "hidden": false
+        }
+    },
+    {
+        "pk": 6,
+        "model": "djcelery.taskmeta",
+        "fields": {
+            "status": "FAILURE",
+            "task_id": "ea69f398-d339-4048-af7a-227791149f52",
+            "date_done": "2014-08-15T08:25:56.687Z",
+            "traceback": "Traceback (most recent call last):\n  File \"/home/aliunsal/Envs/blog/local/lib/python2.7/site-packages/celery/app/trace.py\", line 240, in trace_task\n    R = retval = fun(*args, **kwargs)\n  File \"/home/aliunsal/Envs/blog/local/lib/python2.7/site-packages/celery/app/trace.py\", line 437, in __protected_call__\n    return self.run(*args, **kwargs)\n  File \"/home/aliunsal/PycharmProjects/Blog/task.py\", line 10, in resize_image\n    thumb = ImageOps.fit(image, size, Image.ANTIALIAS)\n  File \"/home/aliunsal/Envs/blog/local/lib/python2.7/site-packages/PIL/ImageOps.py\", line 329, in fit\n    (leftSide, topSide, leftSide + cropWidth, topSide + cropHeight)\n  File \"/home/aliunsal/Envs/blog/local/lib/python2.7/site-packages/PIL/Image.py\", line 763, in crop\n    self.load()\n  File \"/home/aliunsal/Envs/blog/local/lib/python2.7/site-packages/PIL/ImageFile.py\", line 189, in load\n    d = Image._getdecoder(self.mode, d, a, self.decoderconfig)\n  File \"/home/aliunsal/Envs/blog/local/lib/python2.7/site-packages/PIL/Image.py\", line 385, in _getdecoder\n    raise IOError(\"decoder %s not available\" % decoder_name)\nIOError: decoder zip not available\n",
+            "meta": "eJxrYKotZIzgYGBgSM7IzEkpSs2LLdYDADylBhk=",
+            "result": "gAJjZXhjZXB0aW9ucwpJT0Vycm9yCnEBVRlkZWNvZGVyIHppcCBub3QgYXZhaWxhYmxlcQKFcQNScQQu",
+            "hidden": false
+        }
+    },
+    {
+        "pk": 7,
+        "model": "djcelery.taskmeta",
+        "fields": {
+            "status": "FAILURE",
+            "task_id": "7211d4ee-fb89-4db8-ae2d-8e2376b2016b",
+            "date_done": "2014-08-15T08:26:24.931Z",
+            "traceback": "Traceback (most recent call last):\n  File \"/home/aliunsal/Envs/blog/local/lib/python2.7/site-packages/celery/app/trace.py\", line 240, in trace_task\n    R = retval = fun(*args, **kwargs)\n  File \"/home/aliunsal/Envs/blog/local/lib/python2.7/site-packages/celery/app/trace.py\", line 437, in __protected_call__\n    return self.run(*args, **kwargs)\n  File \"/home/aliunsal/PycharmProjects/Blog/task.py\", line 10, in resize_image\n    thumb = ImageOps.fit(image, size, Image.ANTIALIAS)\n  File \"/home/aliunsal/Envs/blog/local/lib/python2.7/site-packages/PIL/ImageOps.py\", line 329, in fit\n    (leftSide, topSide, leftSide + cropWidth, topSide + cropHeight)\n  File \"/home/aliunsal/Envs/blog/local/lib/python2.7/site-packages/PIL/Image.py\", line 763, in crop\n    self.load()\n  File \"/home/aliunsal/Envs/blog/local/lib/python2.7/site-packages/PIL/ImageFile.py\", line 189, in load\n    d = Image._getdecoder(self.mode, d, a, self.decoderconfig)\n  File \"/home/aliunsal/Envs/blog/local/lib/python2.7/site-packages/PIL/Image.py\", line 385, in _getdecoder\n    raise IOError(\"decoder %s not available\" % decoder_name)\nIOError: decoder zip not available\n",
+            "meta": "eJxrYKotZIzgYGBgSM7IzEkpSs2LLdYDADylBhk=",
+            "result": "gAJjZXhjZXB0aW9ucwpJT0Vycm9yCnEBVRlkZWNvZGVyIHppcCBub3QgYXZhaWxhYmxlcQKFcQNScQQu",
+            "hidden": false
+        }
+    },
+    {
+        "pk": 8,
+        "model": "djcelery.taskmeta",
+        "fields": {
+            "status": "FAILURE",
+            "task_id": "21b384e0-32f6-4e7f-8a9e-3563af993020",
+            "date_done": "2014-08-15T08:26:54.070Z",
+            "traceback": "Traceback (most recent call last):\n  File \"/home/aliunsal/Envs/blog/local/lib/python2.7/site-packages/celery/app/trace.py\", line 240, in trace_task\n    R = retval = fun(*args, **kwargs)\n  File \"/home/aliunsal/Envs/blog/local/lib/python2.7/site-packages/celery/app/trace.py\", line 437, in __protected_call__\n    return self.run(*args, **kwargs)\n  File \"/home/aliunsal/PycharmProjects/Blog/task.py\", line 9, in resize_image\n    image = Image.open(image_file)\n  File \"/home/aliunsal/Envs/blog/local/lib/python2.7/site-packages/PIL/Image.py\", line 1952, in open\n    fp = __builtin__.open(fp, \"rb\")\nIOError: [Errno 2] No such file or directory: '/static/img/post_image/Denver-Hot-Chips-TK1.png'\n",
+            "meta": "eJxrYKotZIzgYGBgSM7IzEkpSs2LLdYDADylBhk=",
+            "result": "gAJjZXhjZXB0aW9ucwpJT0Vycm9yCnEBSwJVGU5vIHN1Y2ggZmlsZSBvciBkaXJlY3RvcnlxAlUvL3N0YXRpYy9pbWcvcG9zdF9pbWFnZS9EZW52ZXItSG90LUNoaXBzLVRLMS5wbmdxA4dScQQu",
+            "hidden": false
+        }
+    },
+    {
+        "pk": 9,
+        "model": "djcelery.taskmeta",
+        "fields": {
+            "status": "FAILURE",
+            "task_id": "81324e6e-118c-4e99-a06c-e8593d5aad8d",
+            "date_done": "2014-08-15T08:27:01.958Z",
+            "traceback": "Traceback (most recent call last):\n  File \"/home/aliunsal/Envs/blog/local/lib/python2.7/site-packages/celery/app/trace.py\", line 240, in trace_task\n    R = retval = fun(*args, **kwargs)\n  File \"/home/aliunsal/Envs/blog/local/lib/python2.7/site-packages/celery/app/trace.py\", line 437, in __protected_call__\n    return self.run(*args, **kwargs)\n  File \"/home/aliunsal/PycharmProjects/Blog/task.py\", line 9, in resize_image\n    image = Image.open(image_file)\n  File \"/home/aliunsal/Envs/blog/local/lib/python2.7/site-packages/PIL/Image.py\", line 1952, in open\n    fp = __builtin__.open(fp, \"rb\")\nIOError: [Errno 2] No such file or directory: '/static/img/post_image/Denver-Hot-Chips-TK1.png'\n",
+            "meta": "eJxrYKotZIzgYGBgSM7IzEkpSs2LLdYDADylBhk=",
+            "result": "gAJjZXhjZXB0aW9ucwpJT0Vycm9yCnEBSwJVGU5vIHN1Y2ggZmlsZSBvciBkaXJlY3RvcnlxAlUvL3N0YXRpYy9pbWcvcG9zdF9pbWFnZS9EZW52ZXItSG90LUNoaXBzLVRLMS5wbmdxA4dScQQu",
+            "hidden": false
+        }
+    },
+    {
+        "pk": 10,
+        "model": "djcelery.taskmeta",
+        "fields": {
+            "status": "FAILURE",
+            "task_id": "c7c8109e-3783-4b26-a50d-6d26f8bbb3ed",
+            "date_done": "2014-08-15T08:27:10.366Z",
+            "traceback": "Traceback (most recent call last):\n  File \"/home/aliunsal/Envs/blog/local/lib/python2.7/site-packages/celery/app/trace.py\", line 240, in trace_task\n    R = retval = fun(*args, **kwargs)\n  File \"/home/aliunsal/Envs/blog/local/lib/python2.7/site-packages/celery/app/trace.py\", line 437, in __protected_call__\n    return self.run(*args, **kwargs)\n  File \"/home/aliunsal/PycharmProjects/Blog/task.py\", line 10, in resize_image\n    thumb = ImageOps.fit(image, size, Image.ANTIALIAS)\n  File \"/home/aliunsal/Envs/blog/local/lib/python2.7/site-packages/PIL/ImageOps.py\", line 329, in fit\n    (leftSide, topSide, leftSide + cropWidth, topSide + cropHeight)\n  File \"/home/aliunsal/Envs/blog/local/lib/python2.7/site-packages/PIL/Image.py\", line 763, in crop\n    self.load()\n  File \"/home/aliunsal/Envs/blog/local/lib/python2.7/site-packages/PIL/ImageFile.py\", line 189, in load\n    d = Image._getdecoder(self.mode, d, a, self.decoderconfig)\n  File \"/home/aliunsal/Envs/blog/local/lib/python2.7/site-packages/PIL/Image.py\", line 385, in _getdecoder\n    raise IOError(\"decoder %s not available\" % decoder_name)\nIOError: decoder zip not available\n",
+            "meta": "eJxrYKotZIzgYGBgSM7IzEkpSs2LLdYDADylBhk=",
+            "result": "gAJjZXhjZXB0aW9ucwpJT0Vycm9yCnEBVRlkZWNvZGVyIHppcCBub3QgYXZhaWxhYmxlcQKFcQNScQQu",
+            "hidden": false
+        }
+    },
+    {
+        "pk": 11,
+        "model": "djcelery.taskmeta",
+        "fields": {
+            "status": "FAILURE",
+            "task_id": "831f92f4-6aca-4f19-b309-3adaff00ef3d",
+            "date_done": "2014-08-15T08:27:40.891Z",
+            "traceback": "Traceback (most recent call last):\n  File \"/home/aliunsal/Envs/blog/local/lib/python2.7/site-packages/celery/app/trace.py\", line 240, in trace_task\n    R = retval = fun(*args, **kwargs)\n  File \"/home/aliunsal/Envs/blog/local/lib/python2.7/site-packages/celery/app/trace.py\", line 437, in __protected_call__\n    return self.run(*args, **kwargs)\n  File \"/home/aliunsal/PycharmProjects/Blog/task.py\", line 9, in resize_image\n    image = Image.open(image_file)\n  File \"/home/aliunsal/Envs/blog/local/lib/python2.7/site-packages/PIL/Image.py\", line 1952, in open\n    fp = __builtin__.open(fp, \"rb\")\nIOError: [Errno 2] No such file or directory: 'img/post_image/Denver-Hot-Chips-TK1.png'\n",
+            "meta": "eJxrYKotZIzgYGBgSM7IzEkpSs2LLdYDADylBhk=",
+            "result": "gAJjZXhjZXB0aW9ucwpJT0Vycm9yCnEBSwJVGU5vIHN1Y2ggZmlsZSBvciBkaXJlY3RvcnlxAlUnaW1nL3Bvc3RfaW1hZ2UvRGVudmVyLUhvdC1DaGlwcy1USzEucG5ncQOHUnEELg==",
+            "hidden": false
+        }
+    },
+    {
+        "pk": 12,
+        "model": "djcelery.taskmeta",
+        "fields": {
+            "status": "FAILURE",
+            "task_id": "30afbb80-2a7e-4a21-81a3-82f74dc2aafa",
+            "date_done": "2014-08-15T08:27:54.422Z",
+            "traceback": "Traceback (most recent call last):\n  File \"/home/aliunsal/Envs/blog/local/lib/python2.7/site-packages/celery/app/trace.py\", line 240, in trace_task\n    R = retval = fun(*args, **kwargs)\n  File \"/home/aliunsal/Envs/blog/local/lib/python2.7/site-packages/celery/app/trace.py\", line 437, in __protected_call__\n    return self.run(*args, **kwargs)\n  File \"/home/aliunsal/PycharmProjects/Blog/task.py\", line 10, in resize_image\n    thumb = ImageOps.fit(image, size, Image.ANTIALIAS)\n  File \"/home/aliunsal/Envs/blog/local/lib/python2.7/site-packages/PIL/ImageOps.py\", line 329, in fit\n    (leftSide, topSide, leftSide + cropWidth, topSide + cropHeight)\n  File \"/home/aliunsal/Envs/blog/local/lib/python2.7/site-packages/PIL/Image.py\", line 763, in crop\n    self.load()\n  File \"/home/aliunsal/Envs/blog/local/lib/python2.7/site-packages/PIL/ImageFile.py\", line 189, in load\n    d = Image._getdecoder(self.mode, d, a, self.decoderconfig)\n  File \"/home/aliunsal/Envs/blog/local/lib/python2.7/site-packages/PIL/Image.py\", line 385, in _getdecoder\n    raise IOError(\"decoder %s not available\" % decoder_name)\nIOError: decoder zip not available\n",
+            "meta": "eJxrYKotZIzgYGBgSM7IzEkpSs2LLdYDADylBhk=",
+            "result": "gAJjZXhjZXB0aW9ucwpJT0Vycm9yCnEBVRlkZWNvZGVyIHppcCBub3QgYXZhaWxhYmxlcQKFcQNScQQu",
+            "hidden": false
+        }
+    },
+    {
+        "pk": 13,
+        "model": "djcelery.taskmeta",
+        "fields": {
+            "status": "FAILURE",
+            "task_id": "8de608b7-bac4-40be-9d03-a49d894c836b",
+            "date_done": "2014-08-15T08:28:36.427Z",
+            "traceback": "Traceback (most recent call last):\n  File \"/home/aliunsal/Envs/blog/local/lib/python2.7/site-packages/celery/app/trace.py\", line 240, in trace_task\n    R = retval = fun(*args, **kwargs)\n  File \"/home/aliunsal/Envs/blog/local/lib/python2.7/site-packages/celery/app/trace.py\", line 437, in __protected_call__\n    return self.run(*args, **kwargs)\n  File \"/home/aliunsal/PycharmProjects/Blog/task.py\", line 10, in resize_image\n    thumb = ImageOps.fit(image, size, Image.ANTIALIAS)\n  File \"/home/aliunsal/Envs/blog/local/lib/python2.7/site-packages/PIL/ImageOps.py\", line 329, in fit\n    (leftSide, topSide, leftSide + cropWidth, topSide + cropHeight)\n  File \"/home/aliunsal/Envs/blog/local/lib/python2.7/site-packages/PIL/Image.py\", line 763, in crop\n    self.load()\n  File \"/home/aliunsal/Envs/blog/local/lib/python2.7/site-packages/PIL/ImageFile.py\", line 189, in load\n    d = Image._getdecoder(self.mode, d, a, self.decoderconfig)\n  File \"/home/aliunsal/Envs/blog/local/lib/python2.7/site-packages/PIL/Image.py\", line 385, in _getdecoder\n    raise IOError(\"decoder %s not available\" % decoder_name)\nIOError: decoder zip not available\n",
+            "meta": "eJxrYKotZIzgYGBgSM7IzEkpSs2LLdYDADylBhk=",
+            "result": "gAJjZXhjZXB0aW9ucwpJT0Vycm9yCnEBVRlkZWNvZGVyIHppcCBub3QgYXZhaWxhYmxlcQKFcQNScQQu",
+            "hidden": false
+        }
+    },
+    {
+        "pk": 14,
+        "model": "djcelery.taskmeta",
+        "fields": {
+            "status": "FAILURE",
+            "task_id": "e6ec18bf-ce6b-4690-8d55-5d3e986709c3",
+            "date_done": "2014-08-15T08:29:26.158Z",
+            "traceback": "Traceback (most recent call last):\n  File \"/home/aliunsal/Envs/blog/local/lib/python2.7/site-packages/celery/app/trace.py\", line 240, in trace_task\n    R = retval = fun(*args, **kwargs)\n  File \"/home/aliunsal/Envs/blog/local/lib/python2.7/site-packages/celery/app/trace.py\", line 437, in __protected_call__\n    return self.run(*args, **kwargs)\n  File \"/home/aliunsal/PycharmProjects/Blog/task.py\", line 10, in resize_image\n    thumb = ImageOps.fit(image, size, Image.ANTIALIAS)\n  File \"/home/aliunsal/Envs/blog/local/lib/python2.7/site-packages/PIL/ImageOps.py\", line 329, in fit\n    (leftSide, topSide, leftSide + cropWidth, topSide + cropHeight)\n  File \"/home/aliunsal/Envs/blog/local/lib/python2.7/site-packages/PIL/Image.py\", line 763, in crop\n    self.load()\n  File \"/home/aliunsal/Envs/blog/local/lib/python2.7/site-packages/PIL/ImageFile.py\", line 189, in load\n    d = Image._getdecoder(self.mode, d, a, self.decoderconfig)\n  File \"/home/aliunsal/Envs/blog/local/lib/python2.7/site-packages/PIL/Image.py\", line 385, in _getdecoder\n    raise IOError(\"decoder %s not available\" % decoder_name)\nIOError: decoder zip not available\n",
+            "meta": "eJxrYKotZIzgYGBgSM7IzEkpSs2LLdYDADylBhk=",
+            "result": "gAJjZXhjZXB0aW9ucwpJT0Vycm9yCnEBVRlkZWNvZGVyIHppcCBub3QgYXZhaWxhYmxlcQKFcQNScQQu",
+            "hidden": false
+        }
+    },
+    {
+        "pk": 15,
+        "model": "djcelery.taskmeta",
+        "fields": {
+            "status": "SUCCESS",
+            "task_id": "33053af7-a847-4a37-b93e-2e6f32bc70f0",
+            "date_done": "2014-08-15T09:43:06.327Z",
+            "traceback": null,
+            "meta": "eJxrYKotZIzgYGBgSM7IzEkpSs2LLdYDADylBhk=",
+            "result": null,
+            "hidden": false
+        }
+    },
+    {
+        "pk": 16,
+        "model": "djcelery.taskmeta",
+        "fields": {
+            "status": "SUCCESS",
+            "task_id": "65bd7b85-f217-4e30-8b2b-829eca9c31d5",
+            "date_done": "2014-08-15T09:46:27.936Z",
+            "traceback": null,
+            "meta": "eJxrYKotZIzgYGBgSM7IzEkpSs2LLdYDADylBhk=",
+            "result": null,
+            "hidden": false
+        }
+    },
+    {
+        "pk": 17,
+        "model": "djcelery.taskmeta",
+        "fields": {
+            "status": "SUCCESS",
+            "task_id": "eb4bd11c-1756-4242-a979-d2a701f725df",
+            "date_done": "2014-08-15T09:47:03.499Z",
+            "traceback": null,
+            "meta": "eJxrYKotZIzgYGBgSM7IzEkpSs2LLdYDADylBhk=",
+            "result": null,
+            "hidden": false
+        }
+    },
+    {
+        "pk": 18,
+        "model": "djcelery.taskmeta",
+        "fields": {
+            "status": "SUCCESS",
+            "task_id": "32b809f0-7103-4980-a8c5-452c9667cb1e",
+            "date_done": "2014-08-15T09:56:46.391Z",
+            "traceback": null,
+            "meta": "eJxrYKotZIzgYGBgSM7IzEkpSs2LLdYDADylBhk=",
+            "result": null,
+            "hidden": false
+        }
+    },
+    {
+        "pk": 19,
+        "model": "djcelery.taskmeta",
+        "fields": {
+            "status": "SUCCESS",
+            "task_id": "8ac924ed-646d-481a-abeb-80ebfa9a5536",
+            "date_done": "2014-08-18T05:34:50.030Z",
+            "traceback": null,
+            "meta": "eJxrYKotZIzgYGBgSM7IzEkpSs2LLdYDADylBhk=",
+            "result": null,
+            "hidden": false
+        }
+    },
+    {
+        "pk": 20,
+        "model": "djcelery.taskmeta",
+        "fields": {
+            "status": "FAILURE",
+            "task_id": "31587907-665f-4af6-a474-ef84b4cb6fb5",
+            "date_done": "2014-08-18T05:36:03.260Z",
+            "traceback": "Traceback (most recent call last):\n  File \"/home/aliunsal/Envs/blog/local/lib/python2.7/site-packages/celery/app/trace.py\", line 240, in trace_task\n    R = retval = fun(*args, **kwargs)\n  File \"/home/aliunsal/Envs/blog/local/lib/python2.7/site-packages/celery/app/trace.py\", line 437, in __protected_call__\n    return self.run(*args, **kwargs)\n  File \"/home/aliunsal/PycharmProjects/Blog/task.py\", line 16, in mail_send\n    msg = EmailMessage(subject, html_content, from_email, to)\n  File \"/home/aliunsal/Envs/blog/local/lib/python2.7/site-packages/django/core/mail/message.py\", line 211, in __init__\n    assert not isinstance(to, six.string_types), '\"to\" argument must be a list or tuple'\nAssertionError: \"to\" argument must be a list or tuple\n",
+            "meta": "eJxrYKotZIzgYGBgSM7IzEkpSs2LLdYDADylBhk=",
+            "result": "gAJjZXhjZXB0aW9ucwpBc3NlcnRpb25FcnJvcgpxAVglAAAAInRvIiBhcmd1bWVudCBtdXN0IGJlIGEgbGlzdCBvciB0dXBsZXEChXEDUnEELg==",
+            "hidden": false
+        }
+    },
+    {
+        "pk": 21,
+        "model": "djcelery.taskmeta",
+        "fields": {
+            "status": "SUCCESS",
+            "task_id": "2d83f197-8857-4b18-8a4d-4690f70677e2",
+            "date_done": "2014-08-18T05:36:23.106Z",
+            "traceback": null,
+            "meta": "eJxrYKotZIzgYGBgSM7IzEkpSs2LLdYDADylBhk=",
+            "result": null,
+            "hidden": false
+        }
+    },
+    {
+        "pk": 22,
+        "model": "djcelery.taskmeta",
+        "fields": {
+            "status": "SUCCESS",
+            "task_id": "400608ca-ace0-4683-ac7f-e09331ceb30e",
+            "date_done": "2014-08-18T06:26:34.427Z",
+            "traceback": null,
+            "meta": "eJxrYKotZIzgYGBgSM7IzEkpSs2LLdYDADylBhk=",
+            "result": null,
+            "hidden": false
+        }
+    },
+    {
+        "pk": 23,
+        "model": "djcelery.taskmeta",
+        "fields": {
+            "status": "SUCCESS",
+            "task_id": "c9109839-9fd1-46f6-8c83-343f1d76e1df",
+            "date_done": "2014-08-18T06:46:14.701Z",
+            "traceback": null,
+            "meta": "eJxrYKotZIzgYGBgSM7IzEkpSs2LLdYDADylBhk=",
+            "result": null,
+            "hidden": false
+        }
+    },
+    {
+        "pk": 24,
+        "model": "djcelery.taskmeta",
+        "fields": {
+            "status": "SUCCESS",
+            "task_id": "bf49683b-3905-4ce0-b3bd-37e3fd4426cb",
+            "date_done": "2014-08-18T06:46:46.184Z",
+            "traceback": null,
+            "meta": "eJxrYKotZIzgYGBgSM7IzEkpSs2LLdYDADylBhk=",
+            "result": null,
+            "hidden": false
+        }
+    },
+    {
+        "pk": 25,
+        "model": "djcelery.taskmeta",
+        "fields": {
+            "status": "SUCCESS",
+            "task_id": "113f576e-4307-4f99-9209-ab087cdc8a50",
+            "date_done": "2014-08-18T06:47:20.560Z",
+            "traceback": null,
+            "meta": "eJxrYKotZIzgYGBgSM7IzEkpSs2LLdYDADylBhk=",
+            "result": null,
+            "hidden": false
+        }
+    },
+    {
+        "pk": 26,
+        "model": "djcelery.taskmeta",
+        "fields": {
+            "status": "FAILURE",
+            "task_id": "2e410b77-e045-4b86-b536-e1ca6d0e1a84",
+            "date_done": "2014-08-19T18:52:30.058Z",
+            "traceback": "Traceback (most recent call last):\n  File \"/home/aliunsal/Envs/blog/local/lib/python2.7/site-packages/celery/app/trace.py\", line 240, in trace_task\n    R = retval = fun(*args, **kwargs)\n  File \"/home/aliunsal/Envs/blog/local/lib/python2.7/site-packages/celery/app/trace.py\", line 437, in __protected_call__\n    return self.run(*args, **kwargs)\n  File \"/home/aliunsal/PycharmProjects/Blog/task.py\", line 9, in resize_image\n    image = Image.open(image_file)\n  File \"/home/aliunsal/Envs/blog/local/lib/python2.7/site-packages/PIL/Image.py\", line 2256, in open\n    % (filename if filename else fp))\nIOError: cannot identify image file <InMemoryUploadedFile: manzara_resimleri-5.jpg (image/jpeg)>\n",
+            "meta": "eJxrYKotZIzgYGBgSM7IzEkpSs2LLdYDADylBhk=",
+            "result": "gAJjZXhjZXB0aW9ucwpJT0Vycm9yCnEBVVdjYW5ub3QgaWRlbnRpZnkgaW1hZ2UgZmlsZSA8SW5NZW1vcnlVcGxvYWRlZEZpbGU6IG1hbnphcmFfcmVzaW1sZXJpLTUuanBnIChpbWFnZS9qcGVnKT5xAoVxA1JxBC4=",
+            "hidden": false
+        }
+    },
+    {
+        "pk": 27,
+        "model": "djcelery.taskmeta",
+        "fields": {
+            "status": "SUCCESS",
+            "task_id": "3fea7c59-f60e-47fd-9a38-b0797995243c",
+            "date_done": "2014-08-19T18:55:43.351Z",
+            "traceback": null,
+            "meta": "eJxrYKotZIzgYGBgSM7IzEkpSs2LLdYDADylBhk=",
+            "result": null,
+            "hidden": false
+        }
+    },
+    {
+        "pk": 28,
+        "model": "djcelery.taskmeta",
+        "fields": {
+            "status": "FAILURE",
+            "task_id": "442f8b0a-feea-4055-a207-ffc43d3fb54b",
+            "date_done": "2014-08-19T18:59:23.596Z",
+            "traceback": "Traceback (most recent call last):\n  File \"/home/aliunsal/Envs/blog/local/lib/python2.7/site-packages/celery/app/trace.py\", line 240, in trace_task\n    R = retval = fun(*args, **kwargs)\n  File \"/home/aliunsal/Envs/blog/local/lib/python2.7/site-packages/celery/app/trace.py\", line 437, in __protected_call__\n    return self.run(*args, **kwargs)\n  File \"/home/aliunsal/PycharmProjects/Blog/task.py\", line 9, in resize_image\n    image = Image.open(image_file)\n  File \"/home/aliunsal/Envs/blog/local/lib/python2.7/site-packages/PIL/Image.py\", line 2219, in open\n    fp = builtins.open(fp, \"rb\")\nIOError: [Errno 2] No such file or directory: 'static//media/img/post_image/download_2.jpg'\n",
+            "meta": "eJxrYKotZIzgYGBgSM7IzEkpSs2LLdYDADylBhk=",
+            "result": "gAJjZXhjZXB0aW9ucwpJT0Vycm9yCnEBSwJVGU5vIHN1Y2ggZmlsZSBvciBkaXJlY3RvcnlxAlUrc3RhdGljLy9tZWRpYS9pbWcvcG9zdF9pbWFnZS9kb3dubG9hZF8yLmpwZ3EDh1JxBC4=",
+            "hidden": false
+        }
+    },
+    {
+        "pk": 29,
+        "model": "djcelery.taskmeta",
+        "fields": {
+            "status": "SUCCESS",
+            "task_id": "89cda585-fd4c-4f3e-9c95-1b0e45371848",
+            "date_done": "2014-08-19T19:00:04.545Z",
+            "traceback": null,
+            "meta": "eJxrYKotZIzgYGBgSM7IzEkpSs2LLdYDADylBhk=",
+            "result": null,
+            "hidden": false
+        }
+    },
+    {
+        "pk": 30,
+        "model": "djcelery.taskmeta",
+        "fields": {
+            "status": "FAILURE",
+            "task_id": "f2af5d2b-42da-4eb7-a842-cf65a84b1726",
+            "date_done": "2014-08-19T19:03:17.355Z",
+            "traceback": "Traceback (most recent call last):\n  File \"/home/aliunsal/Envs/blog/local/lib/python2.7/site-packages/celery/app/trace.py\", line 240, in trace_task\n    R = retval = fun(*args, **kwargs)\n  File \"/home/aliunsal/Envs/blog/local/lib/python2.7/site-packages/celery/app/trace.py\", line 437, in __protected_call__\n    return self.run(*args, **kwargs)\n  File \"/home/aliunsal/PycharmProjects/Blog/task.py\", line 9, in resize_image\n    image = Image.open(image_file)\n  File \"/home/aliunsal/Envs/blog/local/lib/python2.7/site-packages/PIL/Image.py\", line 2219, in open\n    fp = builtins.open(fp, \"rb\")\nIOError: [Errno 2] No such file or directory: 'static/img/post_image/Manzara-G-Zel-Manzaralar-Duvar-Ka-D-1154583.jpg'\n",
+            "meta": "eJxrYKotZIzgYGBgSM7IzEkpSs2LLdYDADylBhk=",
+            "result": "gAJjZXhjZXB0aW9ucwpJT0Vycm9yCnEBSwJVGU5vIHN1Y2ggZmlsZSBvciBkaXJlY3RvcnlxAlVFc3RhdGljL2ltZy9wb3N0X2ltYWdlL01hbnphcmEtRy1aZWwtTWFuemFyYWxhci1EdXZhci1LYS1ELTExNTQ1ODMuanBncQOHUnEELg==",
+            "hidden": false
+        }
+    },
+    {
+        "pk": 31,
+        "model": "djcelery.taskmeta",
+        "fields": {
+            "status": "FAILURE",
+            "task_id": "f0fbcb81-93e1-49de-a1e8-6c17cc60ec95",
+            "date_done": "2014-08-19T19:09:03.351Z",
+            "traceback": "Traceback (most recent call last):\n  File \"/home/aliunsal/Envs/blog/local/lib/python2.7/site-packages/celery/app/trace.py\", line 240, in trace_task\n    R = retval = fun(*args, **kwargs)\n  File \"/home/aliunsal/Envs/blog/local/lib/python2.7/site-packages/celery/app/trace.py\", line 437, in __protected_call__\n    return self.run(*args, **kwargs)\n  File \"/home/aliunsal/PycharmProjects/Blog/task.py\", line 9, in resize_image\n    image = Image.open(image_file)\n  File \"/home/aliunsal/Envs/blog/local/lib/python2.7/site-packages/PIL/Image.py\", line 2219, in open\n    fp = builtins.open(fp, \"rb\")\nIOError: [Errno 2] No such file or directory: '/static/img/post_image/user_1.png'\n",
+            "meta": "eJxrYKotZIzgYGBgSM7IzEkpSs2LLdYDADylBhk=",
+            "result": "gAJjZXhjZXB0aW9ucwpJT0Vycm9yCnEBSwJVGU5vIHN1Y2ggZmlsZSBvciBkaXJlY3RvcnlxAlUhL3N0YXRpYy9pbWcvcG9zdF9pbWFnZS91c2VyXzEucG5ncQOHUnEELg==",
+            "hidden": false
+        }
+    },
+    {
+        "pk": 32,
+        "model": "djcelery.taskmeta",
+        "fields": {
+            "status": "SUCCESS",
+            "task_id": "d1d29421-cc7f-41c8-9cc3-2e567a020fd6",
+            "date_done": "2014-08-19T19:09:50.835Z",
+            "traceback": null,
+            "meta": "eJxrYKotZIzgYGBgSM7IzEkpSs2LLdYDADylBhk=",
+            "result": null,
+            "hidden": false
+        }
+    },
+    {
+        "pk": 33,
+        "model": "djcelery.taskmeta",
+        "fields": {
+            "status": "FAILURE",
+            "task_id": "1c93c656-a261-481f-bebd-64efb432a438",
+            "date_done": "2014-08-19T19:10:21.207Z",
+            "traceback": "Traceback (most recent call last):\n  File \"/home/aliunsal/Envs/blog/local/lib/python2.7/site-packages/celery/app/trace.py\", line 240, in trace_task\n    R = retval = fun(*args, **kwargs)\n  File \"/home/aliunsal/Envs/blog/local/lib/python2.7/site-packages/celery/app/trace.py\", line 437, in __protected_call__\n    return self.run(*args, **kwargs)\n  File \"/home/aliunsal/PycharmProjects/Blog/task.py\", line 9, in resize_image\n    image = Image.open(image_file)\n  File \"/home/aliunsal/Envs/blog/local/lib/python2.7/site-packages/PIL/Image.py\", line 2219, in open\n    fp = builtins.open(fp, \"rb\")\nIOError: [Errno 2] No such file or directory: 'static/img/post_image/Manzara-G-Zel-Manzaralar-Duvar-Ka-D-1154583.jpg'\n",
+            "meta": "eJxrYKotZIzgYGBgSM7IzEkpSs2LLdYDADylBhk=",
+            "result": "gAJjZXhjZXB0aW9ucwpJT0Vycm9yCnEBSwJVGU5vIHN1Y2ggZmlsZSBvciBkaXJlY3RvcnlxAlVFc3RhdGljL2ltZy9wb3N0X2ltYWdlL01hbnphcmEtRy1aZWwtTWFuemFyYWxhci1EdXZhci1LYS1ELTExNTQ1ODMuanBncQOHUnEELg==",
+            "hidden": false
+        }
+    },
+    {
+        "pk": 34,
+        "model": "djcelery.taskmeta",
+        "fields": {
+            "status": "FAILURE",
+            "task_id": "4361d1d1-8070-4fd1-8db5-fce8818b7be1",
+            "date_done": "2014-08-19T19:12:51.652Z",
+            "traceback": "Traceback (most recent call last):\n  File \"/home/aliunsal/Envs/blog/local/lib/python2.7/site-packages/celery/app/trace.py\", line 240, in trace_task\n    R = retval = fun(*args, **kwargs)\n  File \"/home/aliunsal/Envs/blog/local/lib/python2.7/site-packages/celery/app/trace.py\", line 437, in __protected_call__\n    return self.run(*args, **kwargs)\n  File \"/home/aliunsal/PycharmProjects/Blog/task.py\", line 9, in resize_image\n    image = Image.open(image_file)\n  File \"/home/aliunsal/Envs/blog/local/lib/python2.7/site-packages/PIL/Image.py\", line 2219, in open\n    fp = builtins.open(fp, \"rb\")\nIOError: [Errno 2] No such file or directory: 'static/img/post_image/Manzara-G-Zel-Manzaralar-Duvar-Ka-D-1154583_1.jpg'\n",
+            "meta": "eJxrYKotZIzgYGBgSM7IzEkpSs2LLdYDADylBhk=",
+            "result": "gAJjZXhjZXB0aW9ucwpJT0Vycm9yCnEBSwJVGU5vIHN1Y2ggZmlsZSBvciBkaXJlY3RvcnlxAlVHc3RhdGljL2ltZy9wb3N0X2ltYWdlL01hbnphcmEtRy1aZWwtTWFuemFyYWxhci1EdXZhci1LYS1ELTExNTQ1ODNfMS5qcGdxA4dScQQu",
+            "hidden": false
+        }
+    },
+    {
+        "pk": 35,
+        "model": "djcelery.taskmeta",
+        "fields": {
+            "status": "FAILURE",
+            "task_id": "296a8d9e-12be-4ac6-8f6b-07b27aa22bb6",
+            "date_done": "2014-08-19T19:14:51.385Z",
+            "traceback": "Traceback (most recent call last):\n  File \"/home/aliunsal/Envs/blog/local/lib/python2.7/site-packages/celery/app/trace.py\", line 240, in trace_task\n    R = retval = fun(*args, **kwargs)\n  File \"/home/aliunsal/Envs/blog/local/lib/python2.7/site-packages/celery/app/trace.py\", line 437, in __protected_call__\n    return self.run(*args, **kwargs)\n  File \"/home/aliunsal/PycharmProjects/Blog/task.py\", line 9, in resize_image\n    image = Image.open(image_file)\n  File \"/home/aliunsal/Envs/blog/local/lib/python2.7/site-packages/PIL/Image.py\", line 2219, in open\n    fp = builtins.open(fp, \"rb\")\nIOError: [Errno 2] No such file or directory: 'static/img/post_image/Manzara-G-Zel-Manzaralar-Duvar-Ka-D-1154583.jpg'\n",
+            "meta": "eJxrYKotZIzgYGBgSM7IzEkpSs2LLdYDADylBhk=",
+            "result": "gAJjZXhjZXB0aW9ucwpJT0Vycm9yCnEBSwJVGU5vIHN1Y2ggZmlsZSBvciBkaXJlY3RvcnlxAlVFc3RhdGljL2ltZy9wb3N0X2ltYWdlL01hbnphcmEtRy1aZWwtTWFuemFyYWxhci1EdXZhci1LYS1ELTExNTQ1ODMuanBncQOHUnEELg==",
+            "hidden": false
+        }
+    },
+    {
+        "pk": 36,
+        "model": "djcelery.taskmeta",
+        "fields": {
+            "status": "FAILURE",
+            "task_id": "4d86330f-753a-4131-b236-2a11b5ee2f03",
+            "date_done": "2014-08-19T19:16:28.580Z",
+            "traceback": "Traceback (most recent call last):\n  File \"/home/aliunsal/Envs/blog/local/lib/python2.7/site-packages/celery/app/trace.py\", line 240, in trace_task\n    R = retval = fun(*args, **kwargs)\n  File \"/home/aliunsal/Envs/blog/local/lib/python2.7/site-packages/celery/app/trace.py\", line 437, in __protected_call__\n    return self.run(*args, **kwargs)\n  File \"/home/aliunsal/PycharmProjects/Blog/task.py\", line 9, in resize_image\n    image = Image.open(image_file)\n  File \"/home/aliunsal/Envs/blog/local/lib/python2.7/site-packages/PIL/Image.py\", line 2219, in open\n    fp = builtins.open(fp, \"rb\")\nIOError: [Errno 2] No such file or directory: 'static/static/img/post_image/Manzara-G-Zel-Manzaralar-Duvar-Ka-D-1154583.jpg'\n",
+            "meta": "eJxrYKotZIzgYGBgSM7IzEkpSs2LLdYDADylBhk=",
+            "result": "gAJjZXhjZXB0aW9ucwpJT0Vycm9yCnEBSwJVGU5vIHN1Y2ggZmlsZSBvciBkaXJlY3RvcnlxAlVMc3RhdGljL3N0YXRpYy9pbWcvcG9zdF9pbWFnZS9NYW56YXJhLUctWmVsLU1hbnphcmFsYXItRHV2YXItS2EtRC0xMTU0NTgzLmpwZ3EDh1JxBC4=",
+            "hidden": false
+        }
+    },
+    {
+        "pk": 37,
+        "model": "djcelery.taskmeta",
+        "fields": {
+            "status": "SUCCESS",
+            "task_id": "98193247-fa3d-40b8-b64b-0ad7323c542f",
+            "date_done": "2014-08-19T19:17:48.135Z",
+            "traceback": null,
+            "meta": "eJxrYKotZIzgYGBgSM7IzEkpSs2LLdYDADylBhk=",
+            "result": null,
+            "hidden": false
+        }
+    },
+    {
+        "pk": 38,
+        "model": "djcelery.taskmeta",
+        "fields": {
+            "status": "SUCCESS",
+            "task_id": "d8049140-e143-4af4-a8a2-3613204b02d6",
+            "date_done": "2014-08-19T19:24:52.642Z",
+            "traceback": null,
+            "meta": "eJxrYKotZIzgYGBgSM7IzEkpSs2LLdYDADylBhk=",
+            "result": null,
+            "hidden": false
+        }
+    },
+    {
+        "pk": 39,
+        "model": "djcelery.taskmeta",
+        "fields": {
+            "status": "SUCCESS",
+            "task_id": "feb710e5-3615-4df1-809d-d7bebb809f94",
+            "date_done": "2014-08-20T08:08:11.370Z",
+            "traceback": null,
+            "meta": "eJxrYKotZIzgYGBgSM7IzEkpSs2LLdYDADylBhk=",
+            "result": null,
+            "hidden": false
+        }
+    },
+    {
+        "pk": 1,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "add_logentry",
+            "name": "Can add log entry",
+            "content_type": 1
+        }
+    },
+    {
+        "pk": 2,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "change_logentry",
+            "name": "Can change log entry",
+            "content_type": 1
+        }
+    },
+    {
+        "pk": 3,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "delete_logentry",
+            "name": "Can delete log entry",
+            "content_type": 1
+        }
+    },
+    {
+        "pk": 4,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "add_permission",
+            "name": "Can add permission",
+            "content_type": 2
+        }
+    },
+    {
+        "pk": 5,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "change_permission",
+            "name": "Can change permission",
+            "content_type": 2
+        }
+    },
+    {
+        "pk": 6,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "delete_permission",
+            "name": "Can delete permission",
+            "content_type": 2
+        }
+    },
+    {
+        "pk": 7,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "add_group",
+            "name": "Can add group",
+            "content_type": 3
+        }
+    },
+    {
+        "pk": 8,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "change_group",
+            "name": "Can change group",
+            "content_type": 3
+        }
+    },
+    {
+        "pk": 9,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "delete_group",
+            "name": "Can delete group",
+            "content_type": 3
+        }
+    },
+    {
+        "pk": 10,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "add_user",
+            "name": "Can add user",
+            "content_type": 4
+        }
+    },
+    {
+        "pk": 11,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "change_user",
+            "name": "Can change user",
+            "content_type": 4
+        }
+    },
+    {
+        "pk": 12,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "delete_user",
+            "name": "Can delete user",
+            "content_type": 4
+        }
+    },
+    {
+        "pk": 13,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "add_contenttype",
+            "name": "Can add content type",
+            "content_type": 5
+        }
+    },
+    {
+        "pk": 14,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "change_contenttype",
+            "name": "Can change content type",
+            "content_type": 5
+        }
+    },
+    {
+        "pk": 15,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "delete_contenttype",
+            "name": "Can delete content type",
+            "content_type": 5
+        }
+    },
+    {
+        "pk": 16,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "add_session",
+            "name": "Can add session",
+            "content_type": 6
+        }
+    },
+    {
+        "pk": 17,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "change_session",
+            "name": "Can change session",
+            "content_type": 6
+        }
+    },
+    {
+        "pk": 18,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "delete_session",
+            "name": "Can delete session",
+            "content_type": 6
+        }
+    },
+    {
+        "pk": 19,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "add_comment",
+            "name": "Can add comment",
+            "content_type": 7
+        }
+    },
+    {
+        "pk": 20,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "change_comment",
+            "name": "Can change comment",
+            "content_type": 7
+        }
+    },
+    {
+        "pk": 21,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "delete_comment",
+            "name": "Can delete comment",
+            "content_type": 7
+        }
+    },
+    {
+        "pk": 22,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "add_post",
+            "name": "Can add post",
+            "content_type": 8
+        }
+    },
+    {
+        "pk": 23,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "change_post",
+            "name": "Can change post",
+            "content_type": 8
+        }
+    },
+    {
+        "pk": 24,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "delete_post",
+            "name": "Can delete post",
+            "content_type": 8
+        }
+    },
+    {
+        "pk": 25,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "add_migrationhistory",
+            "name": "Can add migration history",
+            "content_type": 9
+        }
+    },
+    {
+        "pk": 26,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "change_migrationhistory",
+            "name": "Can change migration history",
+            "content_type": 9
+        }
+    },
+    {
+        "pk": 27,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "delete_migrationhistory",
+            "name": "Can delete migration history",
+            "content_type": 9
+        }
+    },
+    {
+        "pk": 28,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "add_taskmeta",
+            "name": "Can add task state",
+            "content_type": 10
+        }
+    },
+    {
+        "pk": 29,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "change_taskmeta",
+            "name": "Can change task state",
+            "content_type": 10
+        }
+    },
+    {
+        "pk": 30,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "delete_taskmeta",
+            "name": "Can delete task state",
+            "content_type": 10
+        }
+    },
+    {
+        "pk": 31,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "add_tasksetmeta",
+            "name": "Can add saved group result",
+            "content_type": 11
+        }
+    },
+    {
+        "pk": 32,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "change_tasksetmeta",
+            "name": "Can change saved group result",
+            "content_type": 11
+        }
+    },
+    {
+        "pk": 33,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "delete_tasksetmeta",
+            "name": "Can delete saved group result",
+            "content_type": 11
+        }
+    },
+    {
+        "pk": 34,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "add_intervalschedule",
+            "name": "Can add interval",
+            "content_type": 12
+        }
+    },
+    {
+        "pk": 35,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "change_intervalschedule",
+            "name": "Can change interval",
+            "content_type": 12
+        }
+    },
+    {
+        "pk": 36,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "delete_intervalschedule",
+            "name": "Can delete interval",
+            "content_type": 12
+        }
+    },
+    {
+        "pk": 37,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "add_crontabschedule",
+            "name": "Can add crontab",
+            "content_type": 13
+        }
+    },
+    {
+        "pk": 38,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "change_crontabschedule",
+            "name": "Can change crontab",
+            "content_type": 13
+        }
+    },
+    {
+        "pk": 39,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "delete_crontabschedule",
+            "name": "Can delete crontab",
+            "content_type": 13
+        }
+    },
+    {
+        "pk": 40,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "add_periodictasks",
+            "name": "Can add periodic tasks",
+            "content_type": 14
+        }
+    },
+    {
+        "pk": 41,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "change_periodictasks",
+            "name": "Can change periodic tasks",
+            "content_type": 14
+        }
+    },
+    {
+        "pk": 42,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "delete_periodictasks",
+            "name": "Can delete periodic tasks",
+            "content_type": 14
+        }
+    },
+    {
+        "pk": 43,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "add_periodictask",
+            "name": "Can add periodic task",
+            "content_type": 15
+        }
+    },
+    {
+        "pk": 44,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "change_periodictask",
+            "name": "Can change periodic task",
+            "content_type": 15
+        }
+    },
+    {
+        "pk": 45,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "delete_periodictask",
+            "name": "Can delete periodic task",
+            "content_type": 15
+        }
+    },
+    {
+        "pk": 46,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "add_workerstate",
+            "name": "Can add worker",
+            "content_type": 16
+        }
+    },
+    {
+        "pk": 47,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "change_workerstate",
+            "name": "Can change worker",
+            "content_type": 16
+        }
+    },
+    {
+        "pk": 48,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "delete_workerstate",
+            "name": "Can delete worker",
+            "content_type": 16
+        }
+    },
+    {
+        "pk": 49,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "add_taskstate",
+            "name": "Can add task",
+            "content_type": 17
+        }
+    },
+    {
+        "pk": 50,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "change_taskstate",
+            "name": "Can change task",
+            "content_type": 17
+        }
+    },
+    {
+        "pk": 51,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "delete_taskstate",
+            "name": "Can delete task",
+            "content_type": 17
+        }
+    },
+    {
+        "pk": 52,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "add_userprofile",
+            "name": "Can add user profile",
+            "content_type": 18
+        }
+    },
+    {
+        "pk": 53,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "change_userprofile",
+            "name": "Can change user profile",
+            "content_type": 18
+        }
+    },
+    {
+        "pk": 54,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "delete_userprofile",
+            "name": "Can delete user profile",
+            "content_type": 18
+        }
+    },
+    {
+        "pk": 1,
+        "model": "auth.user",
+        "fields": {
+            "username": "admin",
+            "first_name": "Ali",
+            "last_name": "\u00dcnsal",
+            "is_active": true,
+            "is_superuser": true,
+            "is_staff": true,
+            "last_login": "2014-08-26T16:13:09.839Z",
+            "groups": [],
+            "user_permissions": [],
+            "password": "pbkdf2_sha256$12000$FXUkcXrLeHVR$OdNnuxX37mGr4vTdUWvH0P3/98/qzwHEByNkM+gw99Y=",
+            "email": "ali.unsal@markafoni.com",
+            "date_joined": "2014-08-07T07:34:17Z"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "auth.user",
+        "fields": {
+            "username": "aliunsal",
+            "first_name": "aaaaaaaa",
+            "last_name": "\u00fc\u00fc\u00fc\u00fc\u00fc\u00fc\u00fc",
+            "is_active": true,
+            "is_superuser": true,
+            "is_staff": true,
+            "last_login": "2014-08-19T10:49:24.972Z",
+            "groups": [],
+            "user_permissions": [],
+            "password": "pbkdf2_sha256$12000$h1QuIOBUwqrE$D7jsON4YgrG2dpKZCJsdGvIxbFSTlT0w9mLg9M9bG1Q=",
+            "email": "aliunsal@live.com",
+            "date_joined": "2014-08-07T11:49:10Z"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "auth.user",
+        "fields": {
+            "username": "064d7c15-a9e4-4a2f-9032-0f16f82b67d2",
+            "first_name": "",
+            "last_name": "",
+            "is_active": true,
+            "is_superuser": false,
+            "is_staff": false,
+            "last_login": "2014-08-20T13:53:35.908Z",
+            "groups": [],
+            "user_permissions": [],
+            "password": "!9uWlz6JoAJqXQ4Z3dT8pRbvPRoVcFyBjxh0d4fcJ",
+            "email": "aaa@mail.com",
+            "date_joined": "2014-08-20T13:53:35.908Z"
+        }
+    },
+    {
+        "pk": 4,
+        "model": "auth.user",
+        "fields": {
+            "username": "1327c704-e310-47c5-b84e-c8760e3ad747",
+            "first_name": "",
+            "last_name": "",
+            "is_active": true,
+            "is_superuser": false,
+            "is_staff": false,
+            "last_login": "2014-08-22T06:54:11.499Z",
+            "groups": [],
+            "user_permissions": [],
+            "password": "!cfxptSMAzfky8QaaEh44U0f221J2p1TkcwHNSbub",
+            "email": "ali.unsal@yahoo.com",
+            "date_joined": "2014-08-22T06:54:11.499Z"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "Blogs.comment",
+        "fields": {
+            "activation_key": "asdsadsada",
+            "author": 2,
+            "object_id": 4,
+            "approved": true,
+            "content": "sub comment 1 ",
+            "content_type": 7,
+            "date": "2014-08-11T09:55:30Z",
+            "email": "aliunsal@live.com"
+        }
+    },
+    {
+        "pk": 4,
+        "model": "Blogs.comment",
+        "fields": {
+            "activation_key": "0",
+            "author": 1,
+            "object_id": 8,
+            "approved": true,
+            "content": "888888888888",
+            "content_type": 8,
+            "date": "2014-08-20T11:50:50.776Z",
+            "email": "ali.unsal@markafoni.com"
+        }
+    },
+    {
+        "pk": 5,
+        "model": "Blogs.comment",
+        "fields": {
+            "activation_key": "0",
+            "author": 1,
+            "object_id": 8,
+            "approved": true,
+            "content": "222222222222",
+            "content_type": 8,
+            "date": "2014-08-20T11:51:06.905Z",
+            "email": "ali.unsal@markafoni.com"
+        }
+    },
+    {
+        "pk": 6,
+        "model": "Blogs.comment",
+        "fields": {
+            "activation_key": "<sha256 HASH object @ 0x7f857037e260>",
+            "author": 2,
+            "object_id": 8,
+            "approved": false,
+            "content": "asdfghjkl\u015fkjhg",
+            "content_type": 8,
+            "date": "2014-08-22T06:45:40.648Z",
+            "email": "aliunsal@live.com"
+        }
+    },
+    {
+        "pk": 7,
+        "model": "Blogs.comment",
+        "fields": {
+            "activation_key": "11c45fb5a9b573d2b94ab6dc0f09b177edfe8f9090378ec3070459483f228e99",
+            "author": 2,
+            "object_id": 8,
+            "approved": false,
+            "content": "rtyu\u0131ol\u00f6mnbghjkl\u00f6mb",
+            "content_type": 8,
+            "date": "2014-08-22T06:49:51.833Z",
+            "email": "aliunsal@live.com"
+        }
+    },
+    {
+        "pk": 8,
+        "model": "Blogs.comment",
+        "fields": {
+            "activation_key": "ad8ddc3c797fd4c237d606bf1cac558996e810b2e6c7e3fa35575aafc84163a8",
+            "author": 2,
+            "object_id": 8,
+            "approved": false,
+            "content": "asdfsdfsgfgsdfgd",
+            "content_type": 8,
+            "date": "2014-08-22T06:51:08.866Z",
+            "email": "aliunsal@live.com"
+        }
+    },
+    {
+        "pk": 9,
+        "model": "Blogs.comment",
+        "fields": {
+            "activation_key": "9115b4eda80837a161e51e0de97af3612b95feb22af4705352755266249786fb",
+            "author": 4,
+            "object_id": 8,
+            "approved": true,
+            "content": "qweqwewqeqweqweqwewq",
+            "content_type": 8,
+            "date": "2014-08-22T06:54:13.811Z",
+            "email": "ali.unsal@yahoo.com"
+        }
+    },
+    {
+        "pk": 10,
+        "model": "Blogs.comment",
+        "fields": {
+            "activation_key": "0",
+            "author": 1,
+            "object_id": 8,
+            "approved": true,
+            "content": "qwertyu\u0131op\u011f\u00fc,i\u015flkjhgfdszazxcvbnm\u00f6\u00e7.",
+            "content_type": 8,
+            "date": "2014-08-22T06:55:53.156Z",
+            "email": "ali.unsal@markafoni.com"
+        }
+    },
+    {
+        "pk": 11,
+        "model": "Blogs.comment",
+        "fields": {
+            "activation_key": "d216ffa4173d618ab7fce919b60475232b65ffbd29be9909683b3cd121481e00",
+            "author": 2,
+            "object_id": 8,
+            "approved": false,
+            "content": "qwertyu\u0131op\u011f\u00fc,i\u015flkjhgfdxcdsq23456789\u0131uy65",
+            "content_type": 8,
+            "date": "2014-08-22T07:22:25.186Z",
+            "email": "aliunsal@live.com"
+        }
+    },
+    {
+        "pk": 12,
+        "model": "Blogs.comment",
+        "fields": {
+            "activation_key": "cb5f618b8f03e7a91990d8d8fba202a2cd02f102575ba31101191158883ffaea",
+            "author": 2,
+            "object_id": 8,
+            "approved": false,
+            "content": "as12323333",
+            "content_type": 8,
+            "date": "2014-08-22T07:25:11.715Z",
+            "email": "aliunsal@live.com"
+        }
+    },
+    {
+        "pk": 13,
+        "model": "Blogs.comment",
+        "fields": {
+            "activation_key": "83c62941e5d081e5d54d9900255c538648baaeb3038a8d12f39374405dce2356",
+            "author": 2,
+            "object_id": 8,
+            "approved": false,
+            "content": "asdsadasddgfsdgfhsfdgsfdgsdgdsfdsfsdfsfsd",
+            "content_type": 8,
+            "date": "2014-08-25T07:04:13.005Z",
+            "email": "aliunsal@live.com"
+        }
+    },
+    {
+        "pk": 14,
+        "model": "Blogs.comment",
+        "fields": {
+            "activation_key": "24b7a0656b8cc07942e189895351fb01699517d49b3b75789a2249634604387d",
+            "author": 2,
+            "object_id": 8,
+            "approved": false,
+            "content": "asdsadasddgfsdgfhsfdgsfdgsdgdsfdsfsdfsfsd",
+            "content_type": 8,
+            "date": "2014-08-25T07:05:17.274Z",
+            "email": "aliunsal@live.com"
+        }
+    },
+    {
+        "pk": 15,
+        "model": "Blogs.comment",
+        "fields": {
+            "activation_key": "d3f6091e335efea4483fb1a5bfd3d45ac03add4e89dbb7003099f5be3674757b",
+            "author": 2,
+            "object_id": 8,
+            "approved": false,
+            "content": "asdsadasddgfsdgfhsfdgsfdgsdgdsfdsfsdfsfsd",
+            "content_type": 8,
+            "date": "2014-08-25T07:06:53.123Z",
+            "email": "aliunsal@live.com"
+        }
+    },
+    {
+        "pk": 16,
+        "model": "Blogs.comment",
+        "fields": {
+            "activation_key": "2fd1e8dd477522fc8b87c9bf999836d4b42dfd1e2c9d62fa3bebbb3f02dab2ea",
+            "author": 2,
+            "object_id": 8,
+            "approved": false,
+            "content": "asdsadasddgfsdgfhsfdgsfdgsdgdsfdsfsdfsfsd",
+            "content_type": 8,
+            "date": "2014-08-25T07:08:41.658Z",
+            "email": "aliunsal@live.com"
+        }
+    },
+    {
+        "pk": 17,
+        "model": "Blogs.comment",
+        "fields": {
+            "activation_key": "104462af478a5eaab150e37515dca674fbdace5fbd584f8dcc73f798c0e07280",
+            "author": 2,
+            "object_id": 8,
+            "approved": false,
+            "content": "asdsadasddgfsdgfhsfdgsfdgsdgdsfdsfsdfsfsd",
+            "content_type": 8,
+            "date": "2014-08-25T07:09:13.770Z",
+            "email": "aliunsal@live.com"
+        }
+    },
+    {
+        "pk": 18,
+        "model": "Blogs.comment",
+        "fields": {
+            "activation_key": "17c150412812609e40ad05f993ebc4fcfbc6c6b94b52f62a4e2664022758bc30",
+            "author": 2,
+            "object_id": 8,
+            "approved": false,
+            "content": "asdsadasddgfsdgfhsfdgsfdgsdgdsfdsfsdfsfsd",
+            "content_type": 8,
+            "date": "2014-08-25T07:09:40.808Z",
+            "email": "aliunsal@live.com"
+        }
+    },
+    {
+        "pk": 19,
+        "model": "Blogs.comment",
+        "fields": {
+            "activation_key": "be4a8562177ca305713b3f81507c2b4b4d16cef5f3eb0a53140f874cb99fd79a",
+            "author": 2,
+            "object_id": 8,
+            "approved": false,
+            "content": "asdsadasddgfsdgfhsfdgsfdgsdgdsfdsfsdfsfsd",
+            "content_type": 8,
+            "date": "2014-08-25T07:11:20.084Z",
+            "email": "aliunsal@live.com"
+        }
+    },
+    {
+        "pk": 20,
+        "model": "Blogs.comment",
+        "fields": {
+            "activation_key": "e640844a255f7ac4485a8398d0965a26e49a3c90b3b151c61a840ca834f04781",
+            "author": 2,
+            "object_id": 8,
+            "approved": false,
+            "content": "asdsadasddgfsdgfhsfdgsfdgsdgdsfdsfsdfsfsd",
+            "content_type": 8,
+            "date": "2014-08-25T07:11:55.225Z",
+            "email": "aliunsal@live.com"
+        }
+    },
+    {
+        "pk": 21,
+        "model": "Blogs.comment",
+        "fields": {
+            "activation_key": "9d95275c7765686560351bb2ba26b737f438d8777bc17c278ea4c8f733620513",
+            "author": 2,
+            "object_id": 8,
+            "approved": false,
+            "content": "asdsadasddgfsdgfhsfdgsfdgsdgdsfdsfsdfsfsd",
+            "content_type": 8,
+            "date": "2014-08-25T07:12:32.789Z",
+            "email": "aliunsal@live.com"
+        }
+    },
+    {
+        "pk": 22,
+        "model": "Blogs.comment",
+        "fields": {
+            "activation_key": "5fb1101164d1a22f1c757cbdfe93ff345ea3976b56dea221dc3ba0408db83bea",
+            "author": 2,
+            "object_id": 8,
+            "approved": false,
+            "content": "asdsadasddgfsdgfhsfdgsfdgsdgdsfdsfsdfsfsd",
+            "content_type": 8,
+            "date": "2014-08-25T07:13:39.473Z",
+            "email": "aliunsal@live.com"
+        }
+    },
+    {
+        "pk": 23,
+        "model": "Blogs.comment",
+        "fields": {
+            "activation_key": "1066fb1faa05fdd233ea897411055fe3fb648fbe06f658f5b02a62ff2d19ca6b",
+            "author": 2,
+            "object_id": 8,
+            "approved": false,
+            "content": "waesdgfhj\u00f6vgfggh",
+            "content_type": 8,
+            "date": "2014-08-25T07:34:49.666Z",
+            "email": "aliunsal@live.com"
+        }
+    },
+    {
+        "pk": 24,
+        "model": "Blogs.comment",
+        "fields": {
+            "activation_key": "6cfaa5c540e5cb1638dc2a3ed66727379379f2079d37bfb69f137cbfabf8db7d",
+            "author": 2,
+            "object_id": 8,
+            "approved": false,
+            "content": "waesdgfhj\u00f6vgfggh",
+            "content_type": 8,
+            "date": "2014-08-25T07:35:00.659Z",
+            "email": "aliunsal@live.com"
+        }
+    },
+    {
+        "pk": 25,
+        "model": "Blogs.comment",
+        "fields": {
+            "activation_key": "9189450caea76de9eb776ff276a0a38b70f3b018f6dcb5dcc896e87beb3c17ba",
+            "author": 2,
+            "object_id": 8,
+            "approved": false,
+            "content": "waesdgfhj\u00f6vgfggh",
+            "content_type": 8,
+            "date": "2014-08-25T07:35:01.942Z",
+            "email": "aliunsal@live.com"
+        }
+    },
+    {
+        "pk": 26,
+        "model": "Blogs.comment",
+        "fields": {
+            "activation_key": "24317dc906e0fbb5cf1ccbed715ffb662816ae79d1623b4210cedabdf1c38952",
+            "author": 2,
+            "object_id": 8,
+            "approved": false,
+            "content": "waesdgfhj\u00f6vgfggh",
+            "content_type": 8,
+            "date": "2014-08-25T07:35:36.905Z",
+            "email": "aliunsal@live.com"
+        }
+    },
+    {
+        "pk": 27,
+        "model": "Blogs.comment",
+        "fields": {
+            "activation_key": "050a033ae65bcb97006bc79d4d6e6ab9e8651a0325171df0107842a5502a3a59",
+            "author": 2,
+            "object_id": 8,
+            "approved": false,
+            "content": "waesdgfhj\u00f6vgfggh",
+            "content_type": 8,
+            "date": "2014-08-25T07:35:38.455Z",
+            "email": "aliunsal@live.com"
+        }
+    },
+    {
+        "pk": 28,
+        "model": "Blogs.comment",
+        "fields": {
+            "activation_key": "c6f3f44b3aebc13e3d954aa85475b472b43043e28da3443f8081f9ff999667f9",
+            "author": 2,
+            "object_id": 8,
+            "approved": false,
+            "content": "waesdgfhj\u00f6vgfggh",
+            "content_type": 8,
+            "date": "2014-08-25T07:36:33.504Z",
+            "email": "aliunsal@live.com"
+        }
+    },
+    {
+        "pk": 29,
+        "model": "Blogs.comment",
+        "fields": {
+            "activation_key": "e0e0a9792d2f1e46df0013da73024aa8d1e470a117ab2970501296b8bc1b10f6",
+            "author": 2,
+            "object_id": 8,
+            "approved": false,
+            "content": "sadsadsad",
+            "content_type": 8,
+            "date": "2014-08-25T07:39:29.933Z",
+            "email": "aliunsal@live.com"
+        }
+    },
+    {
+        "pk": 30,
+        "model": "Blogs.comment",
+        "fields": {
+            "activation_key": "c3208aebf261b898de2ea84bd938159b578b09d32d3ee0358179c252f083f0c9",
+            "author": 2,
+            "object_id": 8,
+            "approved": false,
+            "content": "sadsadsad",
+            "content_type": 8,
+            "date": "2014-08-25T07:40:07.866Z",
+            "email": "aliunsal@live.com"
+        }
+    },
+    {
+        "pk": 31,
+        "model": "Blogs.comment",
+        "fields": {
+            "activation_key": "1123168e3a3260212e55b76843ce89cf5d3ddcb5e4611b80d792231893eed6aa",
+            "author": 2,
+            "object_id": 8,
+            "approved": false,
+            "content": "asdasdasd",
+            "content_type": 8,
+            "date": "2014-08-25T07:41:38.838Z",
+            "email": "aliunsal@live.com"
+        }
+    },
+    {
+        "pk": 32,
+        "model": "Blogs.comment",
+        "fields": {
+            "activation_key": "0",
+            "author": 1,
+            "object_id": 8,
+            "approved": true,
+            "content": "qwerty",
+            "content_type": 8,
+            "date": "2014-08-25T10:45:56.928Z",
+            "email": "ali.unsal@markafoni.com"
+        }
+    },
+    {
+        "pk": 33,
+        "model": "Blogs.comment",
+        "fields": {
+            "activation_key": "0",
+            "author": 1,
+            "object_id": 8,
+            "approved": true,
+            "content": "qwerty\u00e7lkjgvb\u00f6kjh",
+            "content_type": 8,
+            "date": "2014-08-25T10:46:01.339Z",
+            "email": "ali.unsal@markafoni.com"
+        }
+    },
+    {
+        "pk": 34,
+        "model": "Blogs.comment",
+        "fields": {
+            "activation_key": "dcf061143b15aa9d8af4aadcd4dc4c7d7bf324f0eb24af3f321ae30d100a7cec",
+            "author": 2,
+            "object_id": 8,
+            "approved": true,
+            "content": "qwertyu\u0131op\u011f\u00fci\u015flkj",
+            "content_type": 8,
+            "date": "2014-08-25T10:46:24.415Z",
+            "email": "aliunsal@live.com"
+        }
+    },
+    {
+        "pk": 35,
+        "model": "Blogs.comment",
+        "fields": {
+            "activation_key": "0",
+            "author": 1,
+            "object_id": 14,
+            "approved": true,
+            "content": "qwertyuuyt",
+            "content_type": 8,
+            "date": "2014-08-25T10:50:29.056Z",
+            "email": "ali.unsal@markafoni.com"
+        }
+    },
+    {
+        "pk": 36,
+        "model": "Blogs.comment",
+        "fields": {
+            "activation_key": "0",
+            "author": 1,
+            "object_id": 9,
+            "approved": true,
+            "content": "12345678",
+            "content_type": 8,
+            "date": "2014-08-25T11:12:35.594Z",
+            "email": "ali.unsal@markafoni.com"
+        }
+    },
+    {
+        "pk": 37,
+        "model": "Blogs.comment",
+        "fields": {
+            "activation_key": "0",
+            "author": 1,
+            "object_id": 4,
+            "approved": true,
+            "content": "qwertyu\u0131ol\u00f6mnbf",
+            "content_type": 7,
+            "date": "2014-08-26T16:22:56.567Z",
+            "email": "ali.unsal@markafoni.com"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "Blogs.post",
+        "fields": {
+            "content": "\u015eu anda d\u00fcnyan\u0131n en h\u0131zl\u0131 sedan otomobiline bak\u0131yorsunuz, en az\u0131ndan \u00fcretici firma Dodge'un iddias\u0131 b\u00f6yle. Yeni Challenger SRT Hellcat, 707 beygir g\u00fc\u00e7 ve 870nm tork \u00fcreten s\u00fcper\u015farj destekli 6.2 litre HEMI Hellcat motor ve TorqueFlite 8HP908 8 ileri otomatik \u015fanz\u0131man ile desteklenmi\u015f durumda. \r\n \r\n\u015eanz\u0131man \u00f6nemli \u00e7\u00fcnk\u00fc bu seviyede g\u00fcc\u00fc ve torku g\u00fcvenli bir \u015fekilde ta\u015f\u0131yabilmek i\u00e7in mukavemeti y\u00fcksek ve h\u0131zl\u0131 bir altyap\u0131ya ihtiya\u00e7 duyuyorsunuz. Bu kombinasyonun sonucu olarak, sokak lastikleriyle 0'dan 100 mile h\u0131zlanma ve sonra da durmay\u0131 13 saniyeden daha k\u0131sa bir s\u00fcrede, \u00e7eyrek mile ula\u015fmay\u0131 ise 11 saniyede ger\u00e7ekle\u015ftiren Dodge Charger SRT Hellcat, iddial\u0131 h\u0131zlanma de\u011ferlerini ayn\u0131 oranda iddial\u0131 duru\u015f performans\u0131yla harmanlayabilmek i\u00e7in \u00f6n tekerlerinde, Brembo'nun 15.4-in\u00e7 fren ve 6 pistonlu kaliper sistemini kullan\u0131yor. \r\n \r\nYeni otomobilini \"\u015feytani\" olarak tan\u0131mlayan Dodge, haks\u0131z da say\u0131lmaz \u00e7\u00fcnk\u00fc otomobil \u00f6nden olduk\u00e7a agresif bir profile sahip. Geni\u015f \u0131zgaralar\u0131 ve b\u00fcy\u00fck havaland\u0131rma kanallar\u0131 hem i\u015flevsellik hem de g\u00f6r\u00fcn\u00fcm olarak kasl\u0131 yap\u0131y\u0131 g\u00fc\u00e7lendirirken, i\u00e7 k\u0131s\u0131mda ise 8.4-in\u00e7 boyutundaki bilgi ekran dikkatlerden ka\u00e7m\u0131yor.  \r\n \r\n5 farkl\u0131 s\u00fcr\u00fc\u015f moduna sahip olan Challenger SRT Hellcat, 18 adet hoparl\u00f6rden olu\u015fan 900 Watt g\u00fcc\u00fcndeki Harman Kardon ses sistemiyle e\u011flenceden de taviz vermiyor. Konfor k\u0131sm\u0131nda ise \u00f6nde \u0131s\u0131tmal\u0131 ve so\u011futmal\u0131 arkada ise sadece \u0131s\u0131matl\u0131 olan yeni koltuklar dikkat \u00e7ekiyor. Ayr\u0131ca \u00f6n koltuklardaki yeni yast\u0131k yap\u0131s\u0131 da y\u00fcksek s\u00fcratlerde s\u00fcr\u00fcc\u00fcn\u00fcn kendisini daha fazla g\u00fcvende hissetmesini sa\u011fl\u0131yor. \r\n \r\nHem g\u00f6r\u00fcn\u00fcm\u00fc hem de performans de\u011ferleriyle nefes kesen yeni Dodge Charger SRT Hellcat, Porsche Panamera ve Bentley Flying Spur gibi rakiplerine ek olarak ayn\u0131 zamanda hen\u00fcz a\u00e7\u0131klanmayan fiyatland\u0131rmas\u0131yla muhtemelen Mercedes'in AMG, BMW'nin M ve Audi'nin RS serisi modellerle de k\u0131yaslanabilir. 2015 ba\u015f\u0131nda \u00fcretimine ba\u015flanacak bu \u00e7\u0131lg\u0131n otomobilin fiyat\u0131 da \u00fcretime yak\u0131n bir tarihte a\u00e7\u0131klanacak.",
+            "date": "2014-08-14T12:14:40.325Z",
+            "picture": "static/img/post_image/dodgechargerserthellcat_6a_erdiozuag.jpg",
+            "author": 1,
+            "title": "Seri \u00fcretim en h\u0131zl\u0131 sedan otomobil \u00f6d\u00fcl\u00fc Amerikal\u0131lara m\u0131 gidiyor; \u0130\u015fte Dodge Charger SRT Hellcat"
+        }
+    },
+    {
+        "pk": 4,
+        "model": "Blogs.post",
+        "fields": {
+            "content": "Windows 9 ile birlikte gelmesi beklenen DirectX 12, beraberindeki yenilikler ile bilgisayar i\u015flemcilerinin genel \u00e7al\u0131\u015fma verimlili\u011fini \u00f6nemli oranda artt\u0131racak. AMD'nin Mantle teknolojisine benzer \u015fekilde, ara yaz\u0131l\u0131m katmanlar\u0131ndan ar\u0131nd\u0131r\u0131lm\u0131\u015f, metal seviyesinde kaynak kullan\u0131m\u0131na olanak tan\u0131yan yeni uygulama aray\u00fcz\u00fc, i\u015flemcinin s\u0131n\u0131r\u0131lay\u0131c\u0131 oldu\u011fu fakt\u00f6rlerde hem performans art\u0131\u015f\u0131 hem de g\u00fc\u00e7 t\u00fcketiminde s\u0131\u00e7rama ger\u00e7ekle\u015ftirecek.\r\n \r\n\r\n \r\nBilgisayar Grafikleri ve \u0130nteraktif Teknikler konferans\u0131 olan SIGGRAPH 2014 etkinli\u011finde, Intel taraf\u0131ndan ger\u00e7ekle\u015ftirilen DirectX 12 demosu, yeni aray\u00fcz\u00fcn potansiyeline \u0131\u015f\u0131k tutuyor. Microsoft'un Surface 3 Pro tableti \u00fczerinde, 4. nesil Haswell tabanl\u0131 i\u015flemci ve i\u015flemciye entegre HD 4400 grafik birimi ile ger\u00e7ekle\u015ftirilen demo kapsam\u0131nda, bir asteroid sahas\u0131 i\u00e7erisinde 50.000 farkl\u0131 asteroid ger\u00e7ek zamanl\u0131 olarka render edildi yani her kare i\u00e7erisinde her biri kendi kaplamas\u0131na, geometrik k\u00f6\u015fe ve de\u011fi\u015fmezlere sahip 50.000 \u00e7izim yap\u0131ld\u0131.\r\n \r\n\r\n \r\nTek bir buton ile DirectX 11'den DirectX 12'den ge\u00e7i\u015f yap\u0131lacak \u015fekilde dizayn edilen demo program\u0131 \u00e7er\u00e7evesinde, illk etapta kare oran\u0131 sabit tutularak kaynak kullan\u0131m\u0131ndaki farkl\u0131l\u0131k g\u00f6sterilmeye \u00e7al\u0131\u015f\u0131lm\u0131\u015f. Haber i\u00e7erisindeki \u00f6rneklerden de anla\u015f\u0131labilece\u011fi \u00fczere DirectX 12'ye ge\u00e7i\u015f yap\u0131ld\u0131\u011f\u0131 an itibariyle i\u015flemci g\u00fc\u00e7 kullan\u0131m\u0131, DirectX 11 alt\u0131ndaki sonu\u00e7lara g\u00f6re %50 oran\u0131nda azal\u0131yor. Ayn\u0131 demoyu, kare oran\u0131n\u0131 serbest b\u0131rakarak ta tekrarlayan Intel, DX11 ve DX12 i\u00e7in ayn\u0131 i\u015flemci g\u00fc\u00e7 kullan\u0131m\u0131nda DX12 lehine %50 FPS art\u0131\u015f\u0131 g\u00f6zlemledi.\r\n \r\n\r\n \r\nK\u0131saca \u00f6zetleyecek olursak, DirectX 12'nin daha d\u00fc\u015f\u00fck seviye kaynak kullan\u0131m\u0131na ba\u011fl\u0131 yeni render teknikleri ile, DirectX 11'e g\u00f6re %50 daha az i\u015flemci g\u00fc\u00e7 t\u00fcketimi ya da ayn\u0131 i\u015flemci g\u00fc\u00e7 t\u00fcketimi seviyesinde %50 daha y\u00fcksek grafik performans\u0131 elde edebilece\u011fiz. \u00d6zellilke g\u00fc\u00e7 t\u00fcketiminin azalt\u0131lmas\u0131 ayn\u0131 zamanda i\u015flemcinin daha az \u0131s\u0131nmas\u0131na vesile olaca\u011f\u0131ndan Surface gibi Windows i\u015fletim sistemli tabletler daha rahat \u00e7al\u0131\u015fabilecekler. AMD Mantle teknolojisinin BF4'teki %45 ve Star Swarm oyunlar\u0131ndaki %300+ seviyesindeki performans art\u0131\u015f\u0131n\u0131 dikkate ald\u0131\u011f\u0131m\u0131zda DirectX 12'nin potansiyeli de \u015fimdiden merak konusu.\r\n \r\n\r\n \r\nS\u00fcr\u00fcc\u00fclerin getirdi\u011fi ekstra y\u00fck\u00fc ortadan kald\u0131rarak konsol seviyesinde verimlilik anlay\u0131\u015f\u0131yla geli\u015ftirilen DirectX 12 i\u00e7in AMD, ayn\u0131 prensiple geli\u015ftirilen Mantle teknolojisinin DirectX 12'ye kolayca port edilebilece\u011fi hatta DirectX 11'e g\u00f6re daha h\u0131zl\u0131 ge\u00e7i\u015f yap\u0131labilece\u011fini ifade ediyor. Nvidia'n\u0131n Fermi mimarisi ve sonras\u0131, AMD'nin GCN mimarisi ve sonras\u0131 ile Intel'in Haswell jenerasyonu GPU'lar\u0131 ile desteklenen DX12'nin 2015 sonunda \u00e7\u0131kmas\u0131 bekleniyor.",
+            "date": "2014-08-14T12:17:46.219Z",
+            "picture": "static/img/post_image/dx12intel_b_erdiozuag.jpg",
+            "author": 2,
+            "title": "DirectX 12 y\u00fcksek performans ve y\u00fcksek enerji verimlili\u011fi getirecek"
+        }
+    },
+    {
+        "pk": 5,
+        "model": "Blogs.post",
+        "fields": {
+            "content": "3 Eyl\u00fcl tarihinde IFA 2014 bas\u0131n toplant\u0131s\u0131 ile yeni bombalar\u0131n\u0131 patlatmaya haz\u0131rlanan Samsung'un heybesinde farkl\u0131 kategorilere hitap eden \u00f6zel cihazlar\u0131n oldu\u011fu g\u00fcn y\u00fcz\u00fcne \u00e7\u0131kt\u0131.\r\n\r\nThe Verge edit\u00f6rlerinin elde etti\u011fi g\u00f6rselde Samsung'un yeni \u00fcr\u00fcnleri g\u00f6zler \u00f6n\u00fcne seriliyor. Galaxy Note 4 modelini zaten davetiyelerden biliyoruz. Ancak firman\u0131n Gear VR adl\u0131 sanal ger\u00e7eklik g\u00f6zl\u00fc\u011f\u00fc nihai s\u00fcr\u00fcm\u00fcyle kar\u015f\u0131m\u0131zda duruyor. \r\n\r\nSamsung'un Oculus Rift geli\u015ftiricisi ile i\u015fbirli\u011fi yapt\u0131\u011f\u0131 bir s\u00fcredir dile getiriliyordu. Hatta yeni Oculus Rift modellerinde Galaxy Note 3'deki Super AMOLED ekran\u0131n kullan\u0131ld\u0131\u011f\u0131 belirtiliyordu. G\u00f6r\u00fcn\u00fc\u015fe g\u00f6re Samsung yeni g\u00f6zl\u00fckleri i\u00e7in Oculus'ten yard\u0131m alm\u0131\u015f.\r\n\r\nDi\u011fer taraftan firman\u0131n oyun kontrolc\u00fcs\u00fc de yeni s\u00fcr\u00fcm\u00fcyle lansmanda yerini alacak. Tasar\u0131m olarak elden ge\u00e7en yeni kontrolc\u00fcn\u00fcn daha ak\u0131c\u0131 bir oyun deneyimi sunaca\u011f\u0131 tahmin ediliyor. Ancak bu etkinlikte tan\u0131t\u0131laca\u011f\u0131 belirtilen SIM kart destekli Gear Solo ak\u0131ll\u0131 saatinden \u015fimdilik iz yok. Samsung'un daha ba\u015fka neler sunaca\u011f\u0131n\u0131 ise 3 Eyl\u00fcl tarihindeki etkinlikte g\u00f6rece\u011fiz.\r\n ",
+            "date": "2014-08-14T12:50:24.321Z",
+            "picture": "static/img/post_image/samsung-project-moonlight-3.0.jpg",
+            "author": 1,
+            "title": "Samsung'un IFA 2014 bombalar\u0131 netle\u015fiyor"
+        }
+    },
+    {
+        "pk": 6,
+        "model": "Blogs.post",
+        "fields": {
+            "content": "Y\u0131l ba\u015f\u0131nda Cortex-A15 tabanl\u0131 Tegra K1 Logan s\u00fcr\u00fcm\u00fcn\u00fc ve 64-bitlik iki \u00f6zelle\u015ftirilmi\u015f \u00e7ekirde\u011fe sahip Tegra K1 Denver s\u00fcr\u00fcm\u00fcn\u00fc lanse eden NVIDIA, bu hafta i\u00e7erisinde bu platformlar\u0131n\u0131 bir kez daha lanse etti. \r\n\r\nBu kez Android i\u00e7in geli\u015ftirilen ilk 64-bitlik yongaseti oldu\u011funu duyuran NVIDIA, yongasetleri ile ilgili baz\u0131 detaylar\u0131 da a\u00e7\u0131kl\u0131\u011fa kavu\u015fturdu.\r\n\r\nTegra K1 platformu genelde benchmark skorlar\u0131nda ilk iki s\u0131ray\u0131 korumaya devam ediyor. Yayg\u0131n kullan\u0131mda olmad\u0131\u011f\u0131 i\u00e7in ger\u00e7ek hayat performans\u0131 konusunda fazla bilgi sahibi olmad\u0131\u011f\u0131m\u0131z Tegra K1 i\u00e7in NVIDIA'n\u0131n Android ekosisteminden yeni ortaklar arad\u0131\u011f\u0131 anla\u015f\u0131l\u0131yor. \r\n\r\nARM'\u0131n v8 komut seti \u00fczerine \u00f6zelle\u015ftirdi\u011fi 64-bitlik Tegra K1 s\u00fcr\u00fcm\u00fc \u00e7ift \u00e7ekirdek olmas\u0131na ra\u011fmen olduk\u00e7a ba\u015far\u0131l\u0131 i\u015fler \u00e7\u0131kar\u0131yor. 7 yollu Superscalar yani her bir frekans ba\u015f\u0131na 7'ye kadar e\u015f zamanl\u0131 mikro i\u015flem yapabilme \u00f6zelli\u011fine sahip olan yongaseti her iki \u00e7ekirde\u011fe de hizmet eden 128KB 4 yollu Seviye 1 komut belle\u011fi, 64KB 4 yollu Seviye 1 veri belle\u011fi ve 2MB 16 yollu Seviye 2 \u00f6nbelle\u011fi ihtiva ediyor. \r\n\r\nPlatform 128MB ana bellek tabanl\u0131 bir optimizasyon \u00f6n belle\u011fine sahip ve Dynamic Code Optimization adl\u0131 yenilik\u00e7i bir s\u00fcreci bar\u0131nd\u0131r\u0131yor. Bu s\u00fcre\u00e7 s\u0131k kullan\u0131lan uygulamalar\u0131n yaz\u0131l\u0131m rutinleri i\u00e7in yeniden optimize edilmesi ihtiyac\u0131n\u0131 azalt\u0131yor ve b\u00f6ylece hem performansa hem de enerji tasarrufuna olumlu katk\u0131 yap\u0131yor. \r\n\r\nNVIDIA, Denver yongasetinin PC s\u0131n\u0131f\u0131nda da ba\u015far\u0131l\u0131 olaca\u011f\u0131na inan\u0131yor ve enerji t\u00fcketim de\u011ferleri ile baz\u0131 ana ak\u0131m PC s\u0131n\u0131f\u0131 yongasetleri ile ba\u015faba\u015f bir rekabete girebilece\u011fini belirtiyor. Hali haz\u0131rda baz\u0131 Chromebook modelleri Tegra K1 yongaseti kullanmaya ba\u015flam\u0131\u015ft\u0131. NVIDIA alt seviye diz\u00fcst\u00fc segmentinde \u00fcreticilerin ilgisini \u00e7ekmeye \u00e7al\u0131\u015facak. 64-bitlik Tegra K1 yongasetinin y\u0131l sonunda veya gelecek y\u0131l ba\u015f\u0131nda ilk cihazlarda yerini almas\u0131 bekleniyor. ",
+            "date": "2014-08-14T12:51:26.754Z",
+            "picture": "static/img/post_image/Denver-Hot-Chips-TK1.png",
+            "author": 2,
+            "title": "NVIDIA, Android i\u00e7in 64-bit destekli Denver platformunu duyurdu"
+        }
+    },
+    {
+        "pk": 7,
+        "model": "Blogs.post",
+        "fields": {
+            "content": "qwertyu",
+            "date": "2014-08-19T19:17:47.456Z",
+            "picture": "static/img/post_image/Manzara-G-Zel-Manzaralar-Duvar-Ka-D-1154583_1.jpg",
+            "author": 1,
+            "title": "qwertyu\u0131y"
+        }
+    },
+    {
+        "pk": 8,
+        "model": "Blogs.post",
+        "fields": {
+            "content": "dsadsadsadsadasfasfagaafaf",
+            "date": "2014-08-19T19:24:52.032Z",
+            "picture": "static/img/post_image/ItalyA.jpg",
+            "author": 1,
+            "title": "dsfasdsadsa12345678"
+        }
+    },
+    {
+        "pk": 9,
+        "model": "Blogs.post",
+        "fields": {
+            "content": "123123",
+            "date": "2014-08-25T08:31:41.975Z",
+            "picture": "static/img/post_image/2837c39cc34c5ef306c423f19c270c1f.jpg",
+            "author": 1,
+            "title": "122"
+        }
+    },
+    {
+        "pk": 10,
+        "model": "Blogs.post",
+        "fields": {
+            "content": "4567898754tyu\u0131uyt",
+            "date": "2014-08-25T08:33:30.503Z",
+            "picture": "static/img/post_image/download_3.jpg",
+            "author": 1,
+            "title": "2223344"
+        }
+    },
+    {
+        "pk": 14,
+        "model": "Blogs.post",
+        "fields": {
+            "content": "9876567890*-",
+            "date": "2014-08-25T08:35:30.430Z",
+            "picture": "static/img/post_image/Manzara-Resimleri-17_1.jpg",
+            "author": 1,
+            "title": "234567890*-*0123456"
+        }
+    },
+    {
+        "pk": 15,
+        "model": "Blogs.post",
+        "fields": {
+            "content": "*09875432qwertgjklpokjhgfrfgbn",
+            "date": "2014-08-26T08:27:48.953Z",
+            "picture": "static/img/post_image/Denver-Hot-Chips-TK1_1.png",
+            "author": 1,
+            "title": "1234567890*-"
+        }
+    },
+    {
+        "pk": 16,
+        "model": "Blogs.post",
+        "fields": {
+            "content": "54e3wqasdfghjklop0o9\u0131uhgvfc ",
+            "date": "2014-08-26T08:48:01.710Z",
+            "picture": "static/img/post_image/samsung-project-moonlight-3.0_2.jpg",
+            "author": 1,
+            "title": "1234567890*-*0987"
+        }
+    },
+    {
+        "pk": 1,
+        "model": "Users.userprofile",
+        "fields": {
+            "key_expiration_date": "2014-08-19T10:02:13.759Z",
+            "activation_key": "asdasda",
+            "user": 1,
+            "avatar": "static/img/user_avatar/Denver-Hot-Chips-TK1.png"
+        }
+    },
+    {
+        "pk": 1,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 1,
+            "action_time": "2014-08-07T11:30:19.073Z",
+            "object_repr": "Post object",
+            "object_id": "1",
+            "change_message": "",
+            "user": 1,
+            "content_type": 8
+        }
+    },
+    {
+        "pk": 2,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 1,
+            "action_time": "2014-08-07T11:34:12.166Z",
+            "object_repr": "Comment object",
+            "object_id": "1",
+            "change_message": "",
+            "user": 1,
+            "content_type": 7
+        }
+    },
+    {
+        "pk": 3,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 1,
+            "action_time": "2014-08-07T11:34:43.884Z",
+            "object_repr": "Comment object",
+            "object_id": "2",
+            "change_message": "",
+            "user": 1,
+            "content_type": 7
+        }
+    },
+    {
+        "pk": 4,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 1,
+            "action_time": "2014-08-07T11:49:10.210Z",
+            "object_repr": "aliunsal",
+            "object_id": "2",
+            "change_message": "",
+            "user": 1,
+            "content_type": 4
+        }
+    },
+    {
+        "pk": 5,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 2,
+            "action_time": "2014-08-08T06:38:20.464Z",
+            "object_repr": "admin",
+            "object_id": "1",
+            "change_message": "Changed first_name and last_name.",
+            "user": 1,
+            "content_type": 4
+        }
+    },
+    {
+        "pk": 6,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 1,
+            "action_time": "2014-08-08T07:26:31.487Z",
+            "object_repr": "dddd22",
+            "object_id": "2",
+            "change_message": "",
+            "user": 1,
+            "content_type": 8
+        }
+    },
+    {
+        "pk": 7,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 2,
+            "action_time": "2014-08-08T07:50:30.980Z",
+            "object_repr": "Denem",
+            "object_id": "1",
+            "change_message": "Changed content.",
+            "user": 1,
+            "content_type": 8
+        }
+    },
+    {
+        "pk": 8,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 3,
+            "action_time": "2014-08-08T12:03:54.774Z",
+            "object_repr": "qwerds",
+            "object_id": "2",
+            "change_message": "",
+            "user": 1,
+            "content_type": 7
+        }
+    },
+    {
+        "pk": 9,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 3,
+            "action_time": "2014-08-08T12:03:55.068Z",
+            "object_repr": "qwqweqwwww",
+            "object_id": "1",
+            "change_message": "",
+            "user": 1,
+            "content_type": 7
+        }
+    },
+    {
+        "pk": 10,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 1,
+            "action_time": "2014-08-08T12:04:21.540Z",
+            "object_repr": "Deneme1",
+            "object_id": "1",
+            "change_message": "",
+            "user": 1,
+            "content_type": 7
+        }
+    },
+    {
+        "pk": 11,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 1,
+            "action_time": "2014-08-08T12:04:38.329Z",
+            "object_repr": "Deneme2",
+            "object_id": "2",
+            "change_message": "",
+            "user": 1,
+            "content_type": 7
+        }
+    },
+    {
+        "pk": 12,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 1,
+            "action_time": "2014-08-11T06:55:41.168Z",
+            "object_repr": "sub comment 1 ",
+            "object_id": "3",
+            "change_message": "",
+            "user": 1,
+            "content_type": 7
+        }
+    },
+    {
+        "pk": 13,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 1,
+            "action_time": "2014-08-14T12:14:40.326Z",
+            "object_repr": "Seri \u00fcretim en h\u0131zl\u0131 sedan otomobil \u00f6d\u00fcl\u00fc Amerikal\u0131lara m\u0131 gidiyor; \u0130\u015fte Dodge Charger SRT Hellcat",
+            "object_id": "3",
+            "change_message": "",
+            "user": 1,
+            "content_type": 8
+        }
+    },
+    {
+        "pk": 14,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 1,
+            "action_time": "2014-08-14T12:17:46.220Z",
+            "object_repr": "DirectX 12 y\u00fcksek performans ve y\u00fcksek enerji verimlili\u011fi getirecek",
+            "object_id": "4",
+            "change_message": "",
+            "user": 1,
+            "content_type": 8
+        }
+    },
+    {
+        "pk": 15,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 1,
+            "action_time": "2014-08-14T12:50:24.321Z",
+            "object_repr": "Samsung'un IFA 2014 bombalar\u0131 netle\u015fiyor",
+            "object_id": "5",
+            "change_message": "",
+            "user": 1,
+            "content_type": 8
+        }
+    },
+    {
+        "pk": 16,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 2,
+            "action_time": "2014-08-14T12:50:48.344Z",
+            "object_repr": "Samsung'un IFA 2014 bombalar\u0131 netle\u015fiyor",
+            "object_id": "5",
+            "change_message": "Changed picture.",
+            "user": 1,
+            "content_type": 8
+        }
+    },
+    {
+        "pk": 17,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 1,
+            "action_time": "2014-08-14T12:51:26.755Z",
+            "object_repr": "NVIDIA, Android i\u00e7in 64-bit destekli Denver platformunu duyurdu",
+            "object_id": "6",
+            "change_message": "",
+            "user": 1,
+            "content_type": 8
+        }
+    },
+    {
+        "pk": 18,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 2,
+            "action_time": "2014-08-14T12:52:04.742Z",
+            "object_repr": "NVIDIA, Android i\u00e7in 64-bit destekli Denver platformunu duyurdu",
+            "object_id": "6",
+            "change_message": "Changed picture.",
+            "user": 1,
+            "content_type": 8
+        }
+    },
+    {
+        "pk": 19,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 3,
+            "action_time": "2014-08-19T06:46:10.760Z",
+            "object_repr": "aunsal",
+            "object_id": "3",
+            "change_message": "",
+            "user": 1,
+            "content_type": 4
+        }
+    },
+    {
+        "pk": 20,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 2,
+            "action_time": "2014-08-19T10:48:59.085Z",
+            "object_repr": "aliunsal",
+            "object_id": "2",
+            "change_message": "Changed first_name, last_name and email.",
+            "user": 1,
+            "content_type": 4
+        }
+    },
+    {
+        "pk": 21,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 2,
+            "action_time": "2014-08-19T10:49:08.550Z",
+            "object_repr": "aliunsal",
+            "object_id": "2",
+            "change_message": "Changed is_staff and is_superuser.",
+            "user": 1,
+            "content_type": 4
+        }
+    }
+]
